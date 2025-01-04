@@ -2,7 +2,7 @@
 
 **Maíra Lima de Souza**
 
->I am part of the first generation of data stewards at Cidacs, the Centre for Data and Knowledge Integration for Health, working in Brazil's innovative Data Curatorship sector, which is specialized in administrative data management for scientific purposes (and possibly the first of its kind). Under my supervision, we are now in the third generation.
+>I am part of the first generation of data stewards at Cidacs, the Centre for Data and Knowledge Integration for Health, working in an innovative Data Curatorship sector specialized in administrative data management for scientific purposes (and possibly the first of its kind in Brazil). Under my supervision, we are now in the third generation.
 
 ### What I do:
 
