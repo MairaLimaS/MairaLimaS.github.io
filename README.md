@@ -9,9 +9,6 @@
 * Data Stewardship Team Leader at [CIDACS](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima) (FIOCRUZ, Brazil).
   
 * Instructor - Technical Training in Data Stewardship (CIDACS/FIOCRUZ, Brazil).
-
-* Consultant in Data Stewardship and Data Governance (Brazil).
-  
   
 * Research:
 
@@ -69,15 +66,4 @@
 2021
 * [Zika Cycle Webinar: Sharing and Controlled Access to Cidacs Data](https://www.youtube.com/watch?v=lZSOaDCDZ30)
   
-### Award:
-
-2023
-
-* World Federation of Public Health Association (WFPHA)- [The Information and Data Distribution Award 2023](https://www.wfpha.org/wfpha-awards-2023/)
-> Award granted to CIDACS (FIOCRUZ Brazil) for our collective work on producing knowledge and developing research in adverse contexts, such as the Covid-19 pandemic (https://cidacs.bahia.fiocruz.br/2023/03/27/cidacs-recebe-premio-internacional-por-atuacao-na-pandemia/).
-
------------------------------
-> [!NOTE]
-> [Here is a sample of summarized publications based on administrative data and datasets curated by our team](https://cidacs.bahia.fiocruz.br/wp-content/uploads/2023/04/English-Version.pdf) 
-
 
