@@ -19,7 +19,7 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
   
 * Research:
 
- 	Data Steward Researcher at CIDACS (FIOCRUZ, Brazil).
+	Data Steward Researcher at CIDACS (FIOCRUZ, Brazil).
 
 	Digital Lawyer at <a href="https://www.posdireitodigital.com.br/obras-coletivas-direito-digital" target="_blank">ITS</a>
 
