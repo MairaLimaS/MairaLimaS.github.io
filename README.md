@@ -25,7 +25,7 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
 
 	Complex Network at [Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29)
 
-	[Strengthening initiatives to expand health education and health residency programs: Capacity building in the use of administrative data for research](https://cidacs.bahia.fiocruz.br/projeto/fortalecimento-das-acoes-de-expansao-da-educacao-em-saude-e-das-residencias-em-saude-desenvolvimento-de-capacidades-no-uso-de-dados-administrativos-para-pesquisa/) (past).
+	[Strengthening initiatives to expand health education and health residency programs](https://cidacs.bahia.fiocruz.br/projeto/fortalecimento-das-acoes-de-expansao-da-educacao-em-saude-e-das-residencias-em-saude-desenvolvimento-de-capacidades-no-uso-de-dados-administrativos-para-pesquisa/) (past).
 
 	Epidemiology and Information at [CoVida Network– Science, Ingformation, and Solidarity](https://cidacs.bahia.fiocruz.br/redecovida/sobre/page/15/). A scientific and multidisciplinary collaboration project focused on the Covid-19 pandemic (past - 2020-2021).
 
