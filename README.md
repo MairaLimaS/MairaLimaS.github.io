@@ -1,9 +1,9 @@
-<img width="158" alt="MairaLima" src="https://github.com/user-attachments/assets/8c559636-48dc-40de-a396-2894a63a815a" /> 
+<img align="left" width="158" alt="MairaLima" src="https://github.com/user-attachments/assets/8c559636-48dc-40de-a396-2894a63a815a" align="center" /> 
 
 **Maíra Lima de Souza**
 
->I am part of the first generation of data stewards at Cidacs, the Centre for Data and Knowledge Integration for Health, working in an innovative Data Curatorship sector specialized in administrative data management for scientific purposes (and possibly the first of its kind in Brazil). Under my supervision, we are now in the third generation.
-
+>I am part of the first generation of data stewards at Cidacs, the Centre for Data and Knowledge Integration for Health, working in an innovative Data Curatorship sector specialized in administrative data management for scientific purposes (and possibly the first of its kind in Brazil). As a steward-curator specialist, I was envolved in a numerous research projects, created operational documentation, and validated important stewardship processes. Under my supervision, we are now in the third generation. I am a data 
+----------------------
 ### What I do:
 
 * Data Stewardship Team Leader at [CIDACS](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima) (FIOCRUZ, Brazil).
@@ -62,6 +62,11 @@
 
 2021
 * [Zika Cycle Webinar: Sharing and Controlled Access to Cidacs Data](https://www.youtube.com/watch?v=lZSOaDCDZ30)
+
+### Certification:
+
+2024
+* [Certification in Privacy and Data Protection based on General Data Protection Law (commonly abbreviated as LGPD in Brazil)](https://drive.google.com/file/d/1Taeyjs7fLxidPcmKoWjvoWIn5tsXmds5/view?usp=drive_link)
 
 ### Social Midia and Contact:
 
