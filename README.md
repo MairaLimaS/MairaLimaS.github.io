@@ -65,5 +65,10 @@
 
 2021
 * [Zika Cycle Webinar: Sharing and Controlled Access to Cidacs Data](https://www.youtube.com/watch?v=lZSOaDCDZ30)
-  
+
+### Social Midia and Contact:
+
+[![Linkedin](https://i.sstatic.net/gVE0j.png) LinkedIn](https://www.linkedin.com/in/mairalimas/)
+
+E-mail: lima.maira.souza@gmail.com
 
