@@ -30,7 +30,20 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
 - Diversity Data Management
 - Artificial Intelligence and the Future of Technology
 - Digital Government
-- Data Stewardship Frameworks
+- Data Diversity Stewardship Frameworks
+
+### Education:
+
+* Postgraduate Certificate in Digital Law, Institute for Technology and Society (ITS-UERJ), ongoing
+* PhD in Knowledge Dissemination, Federal Institute of Education, Science, and Technology of Bahia (IFBA), 2019–2023
+* MSc in Ethnic and African Studies, Federal University of Bahia (UFBA), 2015–2017
+* Postgraduate Certificate in Distributed Systems, Federal University of Bahia (UFBA), 2001–2002
+* BSc in Computer Science (Systems Analysis), University of Salvador (UNIFACS), 1995–1999
+
+### Additional education:
+
+* Certificate in Digital Law and New Technologies, Institute for Technology and Society (ITS), 2024
+* Certificate in Delivering Good Data Governance in Low- and Middle-Income Countries, UWE Data Research, Access, and Governance Network (DRAGoN), 2023
 
 ### Publications:
 
