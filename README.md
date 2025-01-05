@@ -45,18 +45,15 @@
 * [Information Systems for COVID-19](https://doi.org/10.9771/9786556300757.003)
 * [Technical note - Information on Gender, Race/Ethnicity, and Social Position for Controlling the COVID-19 Pandemic in Brazil](https://cidacs.bahia.fiocruz.br/redecovida/wp-content/uploads/2020/07/NT-Informa%C3%A7%C3%A3o-sobre-G%C3%AAnero-e-Ra%C3%A7a.pdf)
   
-### Events:
+### Talks and press:
+
+2024
+* [Ethics, Data Governance, and Privacy](https://cidacs.bahia.fiocruz.br/2024/05/07/perspectivas-semelhantes-territorios-distintos-um-modelo-comum-de-dados-em-saude-entre-brasil-e-africa-do-sul/)
 
 2023
 
 * [Digital Curation of Health Data as a Source of Knowledge Production for Scientific Advancement](https://proceedings.science/abrascao-2022/trabalhos/curadoria-digital-de-dados-de-saude-como-fonte-de-producao-de-conhecimento-para?lang=pt-br#)
 * [Formation of Curation Guidelines to Ensure the Quality of Public Health Information: A Proposal for Awareness Using the FAIR and FACT Principles](https://proceedings.science/abrascao-2022/trabalhos/conformacao-de-diretrizes-de-curadoria-para-garantir-a-qualidade-de-informacoes?lang=pt-br#)
-
-
-### Talks and press:
-
-2024
-* [Ethics, Data Governance, and Privacy](https://cidacs.bahia.fiocruz.br/2024/05/07/perspectivas-semelhantes-territorios-distintos-um-modelo-comum-de-dados-em-saude-entre-brasil-e-africa-do-sul/)
 
 2022
  * [Digital Transformations: Experts Discuss How the Health Sector Is Impacted](https://cidacs.bahia.fiocruz.br/2022/09/05/transformacoes-digitais-especialistas-dialogam-como-area-da-saude-e-impactada/)
