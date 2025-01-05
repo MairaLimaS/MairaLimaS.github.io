@@ -14,7 +14,7 @@
 
   Data Steward Researcher at CIDACS (FIOCRUZ, Brazil).
 
-	Digital Laywer at [ITS](https://www.posdireitodigital.com.br/obras-coletivas-direito-digital)
+	Digital Lawyer at <a href="https://www.posdireitodigital.com.br/obras-coletivas-direito-digital" target="_blank">ITS</a>
 
 	Complex Network at [Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29)
 
