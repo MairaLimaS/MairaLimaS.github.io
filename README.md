@@ -70,7 +70,7 @@
 
 ### Social Midia and Contact:
 
-[![Linkedin](https://i.sstatic.net/gVE0j.png) LinkedIn](https://www.linkedin.com/in/mairalimas/)
+[LinkedIn](https://www.linkedin.com/in/mairalimas/)
 
 E-mail: lima.maira.souza@gmail.com
 
