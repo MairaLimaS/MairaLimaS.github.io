@@ -19,11 +19,13 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
   
 * Research:
 
-  Data Steward Researcher at CIDACS (FIOCRUZ, Brazil).
+ 	Data Steward Researcher at CIDACS (FIOCRUZ, Brazil).
 
 	Digital Lawyer at <a href="https://www.posdireitodigital.com.br/obras-coletivas-direito-digital" target="_blank">ITS</a>
 
 	Complex Network at [Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29)
+
+	[Strengthening initiatives to expand health education and health residency programs: Capacity building in the use of administrative data for research](https://cidacs.bahia.fiocruz.br/projeto/fortalecimento-das-acoes-de-expansao-da-educacao-em-saude-e-das-residencias-em-saude-desenvolvimento-de-capacidades-no-uso-de-dados-administrativos-para-pesquisa/) (past).
 
 	Epidemiology and Information at [CoVida Network– Science, Ingformation, and Solidarity](https://cidacs.bahia.fiocruz.br/redecovida/sobre/page/15/). A scientific and multidisciplinary collaboration project focused on the Covid-19 pandemic (past - 2020-2021).
 
@@ -48,6 +50,11 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
 
 * Certificate in Digital Law and New Technologies, Institute for Technology and Society (ITS), 2024
 * Certificate in Delivering Good Data Governance in Low- and Middle-Income Countries, UWE Data Research, Access, and Governance Network (DRAGoN), 2023
+
+### Certification:
+
+2024
+* [Certification in Privacy and Data Protection based on General Data Protection Law (commonly abbreviated as LGPD in Brazil)](https://drive.google.com/file/d/1Taeyjs7fLxidPcmKoWjvoWIn5tsXmds5/view?usp=drive_link)
 
 ### Publications:
 
@@ -82,11 +89,6 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
 
 2021
 * [Zika Cycle Webinar: Sharing and Controlled Access to Cidacs Data](https://www.youtube.com/watch?v=lZSOaDCDZ30)
-
-### Certification:
-
-2024
-* [Certification in Privacy and Data Protection based on General Data Protection Law (commonly abbreviated as LGPD in Brazil)](https://drive.google.com/file/d/1Taeyjs7fLxidPcmKoWjvoWIn5tsXmds5/view?usp=drive_link)
 
 ### Social Midia and Contact:
 
