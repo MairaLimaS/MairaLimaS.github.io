@@ -58,6 +58,10 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
 
 ### Publications:
 
+2025
+
+* [Chapter 8 -The legal basis for systematically retrieving diversity data in health and digital health in Artificial Intelligence and Connected](https://itsrio.org/wp-content/uploads/2017/01/01-ITS_UERJ_POS_2024_V3.pdf)
+
 2024
 
 * [Data Policy and Diversity Data](https://cidacs.bahia.fiocruz.br/2024/08/23/a-politica-de-dados-e-os-dados-sobre-a-diversidade/)
