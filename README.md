@@ -33,10 +33,10 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
 ### Interests:
 
 - Data Protection
-- Diversity Data Management
-- Artificial Intelligence and the Future of Technology
+- Group or community rights
+- Society and the Future of Technology
 - Digital Government
-- Data Diversity Stewardship Frameworks
+- Models of data stewardship (public, research, private sectors, and social communities)
 
 ### Education:
 
