@@ -36,6 +36,7 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
 - Group or community rights
 - Society and the Future of Technology
 - Digital Government
+- Governance and Data Economy, Innovation, Rights, and Social Justice
 - Models of data stewardship (public, research, private sectors, and social communities)
 
 ### Education:
@@ -48,6 +49,7 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
 
 ### Additional education:
 
+* Certificate in Digital Law and Innovation in the Public Sector, Institute for Technology and Society (ITS), 2024
 * Certificate in Digital Law and New Technologies, Institute for Technology and Society (ITS), 2024
 * Certificate in Delivering Good Data Governance in Low- and Middle-Income Countries, UWE Data Research, Access, and Governance Network (DRAGoN), 2023
 
