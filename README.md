@@ -8,8 +8,6 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
 <sub><sup>**Academic Curriculum**: [https://lattes.cnpq.br/5998313597414695](https://lattes.cnpq.br/5998313597414695) </sup></sub> 
 | <sub><sup>**Professional Curriculum**: [MairaLimaS_CV](https://github.com/user-attachments/files/19010054/MairaLimaS_DSt_eng_complete.pdf)
 
-</sup></sub> 
-
 ----------------------
 
 ### What I do:
