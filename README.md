@@ -95,6 +95,10 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
 2021
 * [Zika Cycle Webinar: Sharing and Controlled Access to Cidacs Data](https://www.youtube.com/watch?v=lZSOaDCDZ30)
 
+### Research Products:
+2025
+* [Dapiva – Data and Policy for Inclusion in Administrative Data](https://f0vyja-maira-lima.shinyapps.io/auroraBta/)
+
 ### Social Midia and Contact:
 
 [LinkedIn](https://www.linkedin.com/in/mairalimas/)
