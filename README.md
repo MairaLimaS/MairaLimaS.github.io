@@ -60,7 +60,8 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
 ### Publications:
 
 2025
-
+* Digital inclusion by design
+* Data and Policy for Digital Inclusion in Administrative Data - Daptiva. [Maturity radar for administrative data](https://mairalmas.shinyapps.io/auroraBta_eng/).
 * [Chapter 18 -The legal basis for systematically retrieving diversity data in health and digital health in Artificial Intelligence and Connected](https://itsrio.org/wp-content/uploads/2017/01/01-ITS_UERJ_POS_2024_V3.pdf)
 
 2024
