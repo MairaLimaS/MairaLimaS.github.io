@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <style>
+    body { font-family: sans-serif; display: flex; margin: 0; }
+    nav { width: 220px; background: #f0f0f0; padding: 1em; height: 100vh; }
+    main { padding: 2em; flex-grow: 1; }
+    a { display: block; margin: 0.5em 0; text-decoration: none; color: #333; }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="{{ '/' | relative_url }}">🏠 Início</a></li>
+      <li><a href="{{ '/mentorias' | relative_url }}">🪐 Mentorias</a></li>
+      <li><a href="{{ '/publicacoes' | relative_url }}">📚 Publicações</a></li>
+    </ul>
+  </nav>
+<main>
+    {{ content }}
+  </main>
+</body>
+</html>
