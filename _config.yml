@@ -2,3 +2,17 @@ title: Maíra Lima
 description: Portfólio de dados, diversidade e curadoria
 theme: minima
 markdown: kramdown
+
+# Adiciona seu próprio CSS
+sass:
+  style: compressed
+
+# Usa o CSS customizado
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      stylesheet: "/assets/css/style.css"
