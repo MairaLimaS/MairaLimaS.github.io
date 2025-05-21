@@ -3,11 +3,11 @@ description: Portfólio de dados, diversidade e curadoria
 theme: minima
 markdown: kramdown
 
-# Adiciona seu próprio CSS
+# CSS
 sass:
   style: compressed
 
-# Usa o CSS customizado
+# CSS customizado
 defaults:
   -
     scope:
