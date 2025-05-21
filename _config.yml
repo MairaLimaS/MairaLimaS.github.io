@@ -3,16 +3,3 @@ description: Portfólio de dados, diversidade e curadoria
 theme: minima
 markdown: kramdown
 
-# CSS
-sass:
-  style: compressed
-
-# CSS customizado
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-      stylesheet: "/assets/css/style.css"
