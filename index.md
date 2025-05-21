@@ -26,3 +26,4 @@ Saiba mais sobre mim e o que eu faço:
 
 - [Mentorias e Café com Dados](mentorias.md)
 - [Publicações e Projetos](publicacoes.md)
+- [About me](README.md)
