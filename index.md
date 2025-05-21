@@ -2,12 +2,13 @@
 layout: default
 title: Início
 ---
-<img align="left" width="158" alt="MairaLima" src="https://github.com/user-attachments/assets/8c559636-48dc-40de-a396-2894a63a815a" /> 
+
+# Eu me chamo Maíra e lido com dados!
+
+<img align="left" width="148" alt="MairaLima" src="https://github.com/user-attachments/assets/8c559636-48dc-40de-a396-2894a63a815a" /> 
 <img align="right" width="100" src="https://github.com/user-attachments/assets/6137ad63-4e18-4660-ba58-6a49d9abd784" /> 
 
-# Olá, seja bem-vindo ao meu espaço!
-
-Eu me chamo Maíra e lido com dados!
+------------
 
 Trabalho com organização e cuidado de dados, ajudando instituições a usarem informações de forma ética, segura e inclusiva. 
 
