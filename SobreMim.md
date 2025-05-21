@@ -87,7 +87,7 @@ Fui da primeira geração a atuar no setor inovador de Curadoria de Dados, volta
 ### ☕ Mentorias e Cafés com Dados
 
 Quer conversar sobre curadoria, proteção de dados, diversidade ou políticas públicas?
-[Agende seu horário aqui](https://calendly.com/sou-mairalima/)
-[E-mail](lima.maira.souza@gmail.com)
+- [Agende seu horário aqui](https://calendly.com/sou-mairalima/)
+- Email: lima.maira.souza@gmail.com
 
 
