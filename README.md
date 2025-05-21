@@ -1,7 +1,7 @@
 ---
 layout: default
 title: README
-permalink: /about me/
+permalink: /aboutme/
 ---
 
 <img align="left" width="158" alt="MairaLima" src="https://github.com/user-attachments/assets/8c559636-48dc-40de-a396-2894a63a815a" /> 
