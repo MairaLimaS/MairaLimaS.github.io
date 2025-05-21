@@ -4,8 +4,8 @@ title: README
 permalink: /aboutme/
 ---
 
-<img align="left" width="138" alt="MairaLima" src="https://github.com/user-attachments/assets/8c559636-48dc-40de-a396-2894a63a815a" /> 
-<img align="right" width="100" src="https://github.com/user-attachments/assets/6137ad63-4e18-4660-ba58-6a49d9abd784" /> 
+<img align="left" width="128" alt="MairaLima" src="https://github.com/user-attachments/assets/8c559636-48dc-40de-a396-2894a63a815a" /> 
+<img align="right" width="90" src="https://github.com/user-attachments/assets/6137ad63-4e18-4660-ba58-6a49d9abd784" /> 
 
 **Maíra Lima de Souza**
 
