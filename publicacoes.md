@@ -3,7 +3,6 @@ layout: default
 title: Publicações e Projetos
 permalink: /publicacoes/
 ---
-
 # 📚 Publicações e Projetos
 
 Fique por dentro do que já fiz:
