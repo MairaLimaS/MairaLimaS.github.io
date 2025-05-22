@@ -3,8 +3,7 @@ layout: default
 title: Mentorias e Café com Dados
 permalink: /mentorias/
 ---
-# 🌱 Quem eu posso ajudar:
-
+# Quem eu posso ajudar:
 - Empresas de Saúde
 - Agronegócio
 - Centros de Pesquisa
@@ -14,7 +13,7 @@ permalink: /mentorias/
 - Pessoas que querem entender como dados públicos podem ser usados de forma ética e estratégica
  
 ------------------
-# ☕ Mentorias e Café com Dados
+# Mentorias e Café com Dados
 
 Espaços de troca e escuta para quem quer refletir sobre:
 
