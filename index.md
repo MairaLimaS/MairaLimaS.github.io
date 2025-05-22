@@ -10,10 +10,10 @@ title: Início
 
 ------------
 
-Trabalho com organização e cuidado de dados, ajudando instituições a usarem informações de forma ética, segura e inclusiva. 
+Trabalho com organização e cuidado de dados, ajudando instituições a usarem informações de forma ética, segura e inclusiva. <sup>*</sup> 
 
 ----------------------
-O que eu faço:
+O que eu faço: <sup>*</sup>
 
 * **Organização e documentação de dados**: cuido para que os dados estejam bem organizados, com descrições claras e prontos para serem usados com segurança.
 * **Regras e proteção de dados (LGPD)**: ajudo organizações a seguir a Lei Geral de Proteção de Dados, com práticas éticas no uso de informações sensíveis.
