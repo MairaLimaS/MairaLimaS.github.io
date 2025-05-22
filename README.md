@@ -15,13 +15,15 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
 <sub><sup>**Academic Curriculum**: [https://lattes.cnpq.br/5998313597414695](https://lattes.cnpq.br/5998313597414695) </sup></sub> | <sub><sup>**Professional Curriculum**: [MairaLimaS_CV](https://github.com/user-attachments/files/19010054/MairaLimaS_DSt_eng_complete.pdf)
 
 ----------------------
+<div style="font-size:90%">
+	
 ### What I do:
 
-* Data Stewardship Team Leader at [CIDACS](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima) (FIOCRUZ, Brazil).
+Data Stewardship Team Leader at [CIDACS](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima) (FIOCRUZ, Brazil).
+ 
+Instructor - Technical Training in Data Stewardship (CIDACS/FIOCRUZ, Brazil).
   
-* Instructor - Technical Training in Data Stewardship (CIDACS/FIOCRUZ, Brazil).
-  
-* Research:
+Research:
 
 	Data Steward Researcher at CIDACS (FIOCRUZ, Brazil).
 
@@ -111,3 +113,4 @@ I am part of the first generation of data stewards at Cidacs, the Centre for Dat
 
 E-mail: lima.maira.souza@gmail.com
 
+</div>
