@@ -9,7 +9,7 @@ title: Início
 
 ------------
 
-Trabalho com organização e cuidado de dados, ajudando instituições a usarem informações de forma ética, segura e inclusiva. <sup> </sup> 
+Trabalho com organização e cuidado de dados, ajudando pessoas e instituições a usarem informações de forma ética, segura e inclusiva. <sup> </sup> 
 
 ----------------------
 
