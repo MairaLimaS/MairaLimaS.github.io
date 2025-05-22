@@ -20,7 +20,10 @@
     </ul>
   </nav>
 <main>
-    {{ content }}
+    <main style="{% if page.permalink == '/publicacoes/' %}font-size: 0.9rem; line-height: 1.6;{% endif %}">
+  {{ content }}
+</main>
+
   </main>
 </body>
 </html>
