@@ -13,14 +13,8 @@ title: Início
 Trabalho com organização e cuidado de dados, ajudando instituições a usarem informações de forma ética, segura e inclusiva. <sup> </sup> 
 
 ----------------------
-O que eu faço: <sup> </sup>
 
-* **Organização e documentação de dados**: cuido para que os dados estejam bem organizados, com descrições claras e prontos para serem usados com segurança.
-* **Regras e proteção de dados (LGPD)**: ajudo organizações a seguir a Lei Geral de Proteção de Dados, com práticas éticas no uso de informações sensíveis.
-* **Identificação de dados delicados**: faço o mapeamento de variáveis que podem revelar informações pessoais, garantindo o uso responsável.
-* **Análise da qualidade e maturidade dos dados**: crio formas de visualizar e avaliar como os dados estão estruturados e o quanto estão prontos para uso.
-* **Mentorias, cursos e oficinas**: compartilho conhecimento com profissionais e equipes sobre boas práticas no uso e organização de dados.
-* **Consultoria em diversidade e dados públicos**: apoio projetos e instituições que queiram tornar seus dados mais inclusivos, representativos e úteis para políticas públicas.
+Fui da primeira geração a atuar no setor inovador de Curadoria de Dados, voltado para organizar e cuidar de grandes bases administrativas usadas em pesquisas científicas (talvez o primeiro desse tipo no Brasil). Trabalhei com dados gerados pelos principais sistemas de informação do governo. Como especialista em curadoria, participei de projetos de pesquisa, produzi documentos operacionais e contribuí para validar processos importantes de organização dos dados. Com o tempo, e já na coordenação da equipe, avancei para a terceira geração desse trabalho.
 
 Saiba mais sobre mim e o que eu faço:
 
