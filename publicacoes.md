@@ -7,7 +7,7 @@ permalink: /publicacoes/
 
 Fique por dentro do que já fiz:
 
-🎓 Certificações
+🎓 Certificações <sup></sup> 
 2024
 * [Certificação em Privacidade e Proteção de Dados baseada na Lei Geral de Proteção de Dados (conhecida como LGPD no Brasil)](https://drive.google.com/file/d/1Taeyjs7fLxidPcmKoWjvoWIn5tsXmds5/view?usp=drive_link)
   
