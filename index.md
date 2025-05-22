@@ -6,7 +6,6 @@ title: Início
 # Maira Lima
 
 <img align="left" width="98" alt="MairaLima" src="https://github.com/user-attachments/assets/8c559636-48dc-40de-a396-2894a63a815a" /> 
-<img align="right" width="90" src="https://github.com/user-attachments/assets/6137ad63-4e18-4660-ba58-6a49d9abd784" /> 
 
 ------------
 
@@ -21,3 +20,7 @@ Saiba mais sobre mim e o que eu faço:
 - [Mentorias e Café com Dados](mentorias.md)
 - [Publicações e Projetos](publicacoes.md)
 - [About me](README.md)
+
+  ------------
+  
+<img align="right" width="90" src="https://github.com/user-attachments/assets/6137ad63-4e18-4660-ba58-6a49d9abd784" /> 
