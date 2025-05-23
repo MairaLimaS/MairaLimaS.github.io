@@ -4,10 +4,40 @@
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
   <style>
-    body { font-family: sans-serif; display: flex; margin: 0; }
-    nav { width: 220px; background: #f0f0f0; padding: 1em; height: 100vh; }
-    main { padding: 2em; flex-grow: 1; font-size: 0.8rem;  /* <- adicionado */ line-height: 1.8; /* <-opcional para melhor legibilidade */}
-    a { display: block; margin: 0.5em 0; text-decoration: none; color: #333; }
+    body {
+      font-family: sans-serif;
+      display: flex;
+      margin: 0;
+    }
+
+    nav {
+      width: 220px;
+      background: #f0f0f0;
+      padding: 1em;
+      height: 100vh;
+    }
+
+    main {
+      padding: 2em;
+      flex-grow: 1;
+      font-size: 0.8rem;      /* Tamanho da fonte */
+      line-height: 1.8;       /* Espaçamento entre linhas */
+    }
+
+    p {
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+      margin-left: 0;
+      margin-right: 0;
+      /* text-indent: 2em; */ /* Descomente se quiser recuo na primeira linha */
+    }
+
+    a {
+      display: block;
+      margin: 0.5em 0;
+      text-decoration: none;
+      color: #333;
+    }
   </style>
 </head>
 <body>
@@ -19,10 +49,8 @@
       <li><a href="{{ '/aboutme' | relative_url }}"> About me</a></li>
     </ul>
   </nav>
-<main>
-  {{ content }}
-</main>
-
+  <main>
+    {{ content }}
   </main>
 </body>
 </html>
