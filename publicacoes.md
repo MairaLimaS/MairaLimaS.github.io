@@ -3,23 +3,23 @@ layout: default
 title: Publicações e Projetos
 permalink: /publicacoes/
 ---
-# 📚 Publicações e Projetos
+
+<h2> Publicações e Projetos</h2>
 
 Fique por dentro do que já fiz:
 
-🎓 Certificações
+<h4> Certificações</h4>
 
 2024
 
 [Certificação em Privacidade e Proteção de Dados baseada na Lei Geral de Proteção de Dados (conhecida como LGPD no Brasil)](https://drive.google.com/file/d/1Taeyjs7fLxidPcmKoWjvoWIn5tsXmds5/view?usp=drive_link)
   
-🚀 Liderança
+<h4> Liderança</h4>
 
-Fui lider de uma equipe que lida com grandes bases de dados para melhorar políticas públicas
-  * [CIDACS](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima) (FIOCRUZ, Brazil).
+Fui lider de uma equipe que lidava com grandes bases de dados para pesquisas orientadas à melhoria de políticas públicas no
+[CIDACS](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima)(FIOCRUZ, Brazil).
   
-📚 Pesquisa
-
+<h4> Pesquisa</h4>
 Redes Complexas: 
   *  [Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29)
 
@@ -29,7 +29,7 @@ Educação Continuada:
 Informação e Epidemiologia, um projeto de colaboração científica e multidisciplinar focado na pandemia de Covid-19 (já concluído – 2020 a 2021):
   * link: [CoVida Network– Science, Information, and Solidarity](https://cidacs.bahia.fiocruz.br/redecovida/sobre/page/15/). 
   
-📚 Publicações
+<h4> Publicações</h4>
 
 2025
 
@@ -58,7 +58,7 @@ Inclusão digital desde a concepção:
 [Nota técnica – Informação sobre Gênero, Raça/Cor e Posição Social no Controle da Pandemia de COVID-19 no Brasil](https://cidacs.bahia.fiocruz.br/redecovida/wp-content/uploads/2020/07/NT-Informa%C3%A7%C3%A3o-sobre-G%C3%AAnero-e-Ra%C3%A7a.pdf)
 
 ---
-🎤 Palestras e Mídia
+<h4> Palestras e Mídia</h4>
 
 2024
 
