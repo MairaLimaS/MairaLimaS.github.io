@@ -69,8 +69,8 @@ I am part of the first generation of data stewards at Cidacs (the Centre for Dat
 
 **2025**
 - *Data and Policy for Digital Inclusion in Administrative Data*:
-    * [Daptiva](https://github.com/MairaLimaS/Dapiva)
-    * [Maturity Radar Prototype](https://mairalmas.shinyapps.io/auroraBta_eng/)
+       * [Daptiva](https://github.com/MairaLimaS/Dapiva)
+       * [Maturity Radar Prototype](https://mairalmas.shinyapps.io/auroraBta_eng/)
   
 - *Chapter 18 – Diversity Data in Health and Digital Health* ([ITS Rio](https://itsrio.org/wp-content/uploads/2017/01/01-ITS_UERJ_POS_2024_V3.pdf))
 
