@@ -22,6 +22,7 @@ Fui lider de uma equipe que lidava com grandes bases de dados para pesquisas ori
 [CIDACS](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima)(FIOCRUZ, Brazil).
 
 --------------------
+
 <h4> Pesquisa</h4>
 
 Redes Complexas:[Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29)
@@ -36,7 +37,7 @@ Informação e Epidemiologia, um projeto de colaboração científica e multidis
 
 2025
 
-Dados e política para inclusão digital de Dados Administrativos : [Daptiva](https://github.com/MairaLimaS/Dapiva)  
+Dados e política para inclusão digital de Dados Administrativos: [Daptiva](https://github.com/MairaLimaS/Dapiva)  
 
 Inclusão digital desde a concepção: [Protótipo do radar de maturidade para dados administrativos](https://mairalmas.shinyapps.io/auroraBta_eng/)
 
