@@ -12,7 +12,7 @@ I am part of the first generation of data stewards at Cidacs (the Centre for Dat
 
 ---
 
-<sub><sup>**Academic CV**: [Lattes](https://lattes.cnpq.br/5998313597414695) | **Professional CV**: [PDF](https://github.com/user-attachments/files/19010054/MairaLimaS_DSt_eng_complete.pdf)</sup></sub>
+<sub>**Academic CV**: [Lattes](https://lattes.cnpq.br/5998313597414695) | **Professional CV**: [PDF](https://github.com/user-attachments/files/19010054/MairaLimaS_DSt_eng_complete.pdf)</sub>
 
 ---
 
