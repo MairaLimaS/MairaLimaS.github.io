@@ -29,7 +29,7 @@ Redes Complexas:[Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=2
 
 Educação Continuada: [Fortalecimento de iniciativas para expandir a educação em saúde e os programas de residência em saúde](https://cidacs.bahia.fiocruz.br/projeto/fortalecimento-das-acoes-de-expansao-da-educacao-em-saude-e-das-residencias-em-saude-desenvolvimento-de-capacidades-no-uso-de-dados-administrativos-para-pesquisa/) (passado).
 
-Informação e Epidemiologia, um projeto de colaboração científica e multidisciplinar focado na pandemia de Covid-19 (já concluído – 2020 a 2021). Link: [CoVida Network– Science, Information, and Solidarity](https://cidacs.bahia.fiocruz.br/redecovida/sobre/page/15/). 
+Informação e Epidemiologia, um projeto de colaboração científica e multidisciplinar focado na pandemia de Covid-19 (já concluído – 2020 a 2021). Link: [CoVida Network– Science, Information, and Solidarity](https://cidacs.bahia.fiocruz.br/redecovida/sobre/page/15/) 
   
 ----------------------------------
 
