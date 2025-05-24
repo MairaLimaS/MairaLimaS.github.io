@@ -19,14 +19,14 @@ I am part of the first generation of data stewards at Cidacs (the Centre for Dat
 ## What I Do
 
 - **Data Stewardship Team Leader** at [CIDACS (FIOCRUZ, Brazil)](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima)
-- **Instructor** – Technical Training in Data Stewardship (CIDACS/FIOCRUZ, Brazil)
+- **Instructor** – Technical Training in Data Stewardship(CIDACS/FIOCRUZ, Brazil)
 
 ---
 
 ## Research Areas
 
 - **Data Stewardship Researcher** at CIDACS (FIOCRUZ, Brazil)
-- **Digital Law** at [ITS Rio](https://www.posdireitodigital.com.br/obras-coletivas-direito-digital)
+- **Digital Law** at[ITS Rio](https://www.posdireitodigital.com.br/obras-coletivas-direito-digital)
 - **Complex Networks** at [Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29)
 - [Health Education and Residency Programs](https://cidacs.bahia.fiocruz.br/projeto/fortalecimento-das-acoes-de-expansao-da-educacao-em-saude-e-das-residencias-em-saude-desenvolvimento-de-capacidades-no-uso-de-dados-administrativos-para-pesquisa/)
 - [CoVida Network – Science, Information, and Solidarity](https://cidacs.bahia.fiocruz.br/redecovida/sobre/page/15/)
