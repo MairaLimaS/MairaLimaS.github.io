@@ -18,7 +18,7 @@ Fique por dentro do que já fiz:
 
 <h4>Liderança</h4>
 Fui líder de uma equipe que lidava com grandes bases de dados para pesquisas orientadas à melhoria de políticas públicas
-[CIDACS/FIOCRUZ, Brazil)](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima).
+[CIDACS/FIOCRUZ, Brazil)](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima)
 
 --------------------
 
