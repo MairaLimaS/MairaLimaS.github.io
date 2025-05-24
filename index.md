@@ -5,7 +5,7 @@ title: Início
 
 # Maira Lima
 
-<img align="right" width="120" style="margin-right: 20px; margin-bottom: 10px;" alt="Maira Lima" src="https://github.com/user-attachments/assets/8c559636-48dc-40de-a396-2894a63a815a" /> 
+<img align="left" width="120" style="margin-right: 20px; margin-bottom: 10px;" alt="Maira Lima" src="https://github.com/user-attachments/assets/8c559636-48dc-40de-a396-2894a63a815a" /> 
 
 ---
 
