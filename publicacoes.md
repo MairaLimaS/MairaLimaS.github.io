@@ -25,7 +25,7 @@ Fui lider de uma equipe que lidava com grandes bases de dados para pesquisas ori
 
 <h4> Pesquisa</h4>
 
-Redes Complexas:[Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29)
+Redes Complexas:&nbsp;[Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29)
 
 Educação Continuada: [Fortalecimento de iniciativas para expandir a educação em saúde e os programas de residência em saúde](https://cidacs.bahia.fiocruz.br/projeto/fortalecimento-das-acoes-de-expansao-da-educacao-em-saude-e-das-residencias-em-saude-desenvolvimento-de-capacidades-no-uso-de-dados-administrativos-para-pesquisa/) (passado).
 
