@@ -26,8 +26,8 @@ I am part of the first generation of data stewards at Cidacs (the Centre for Dat
 ## Research Areas
 
 - **Data Stewardship Researcher** at CIDACS (FIOCRUZ, Brazil)
-- **Digital Law** at[ITS Rio](https://www.posdireitodigital.com.br/obras-coletivas-direito-digital)
-- **Complex Networks** at [Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29)
+- **Digital Law** at&nbsp;[ITS Rio](https://www.posdireitodigital.com.br/obras-coletivas-direito-digital)
+- **Complex Networks** at&nbsp;[Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29)
 - [Health Education and Residency Programs](https://cidacs.bahia.fiocruz.br/projeto/fortalecimento-das-acoes-de-expansao-da-educacao-em-saude-e-das-residencias-em-saude-desenvolvimento-de-capacidades-no-uso-de-dados-administrativos-para-pesquisa/)
 - [CoVida Network – Science, Information, and Solidarity](https://cidacs.bahia.fiocruz.br/redecovida/sobre/page/15/)
 
@@ -68,8 +68,8 @@ I am part of the first generation of data stewards at Cidacs (the Centre for Dat
 ## Publications
 
 **2025**
-- *Data and Policy for Digital Inclusion in Administrative Data*: [Daptiva](https://github.com/MairaLimaS/Dapiva) and [Maturity Radar Prototype](https://mairalmas.shinyapps.io/auroraBta_eng/)
-- *Chapter 18 – Diversity Data in Health and Digital Health* ([ITS Rio](https://itsrio.org/wp-content/uploads/2017/01/01-ITS_UERJ_POS_2024_V3.pdf))
+- *Data and Policy for Digital Inclusion in Administrative Data*:&nbsp;[Daptiva](https://github.com/MairaLimaS/Dapiva) and&nbsp;[Maturity Radar Prototype](https://mairalmas.shinyapps.io/auroraBta_eng/)
+- *Chapter 18 – Diversity Data in Health and Digital Health*&nbsp;([ITS Rio](https://itsrio.org/wp-content/uploads/2017/01/01-ITS_UERJ_POS_2024_V3.pdf))
   
 **2024**
 - [Data Policy and Diversity Data](https://cidacs.bahia.fiocruz.br/2024/08/23/a-politica-de-dados-e-os-dados-sobre-a-diversidade/)
