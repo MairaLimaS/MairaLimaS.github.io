@@ -21,6 +21,8 @@ I am part of the first generation of data stewards at Cidacs (the Centre for Dat
 - **Data Stewardship Team Leader** at [CIDACS (FIOCRUZ, Brazil)](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima)
 - **Instructor** – Technical Training in Data Stewardship (CIDACS/FIOCRUZ, Brazil)
 
+---
+
 ### Research Areas
 
 - **Data Stewardship Researcher** at CIDACS (FIOCRUZ, Brazil)
