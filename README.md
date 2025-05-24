@@ -23,6 +23,7 @@ I am part of the first generation of data stewards at Cidacs (the Centre for Dat
 
 ---
 
+
 ### Research Areas
 
 - **Data Stewardship Researcher** at CIDACS (FIOCRUZ, Brazil)
