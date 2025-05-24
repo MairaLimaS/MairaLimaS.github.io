@@ -23,8 +23,7 @@ I am part of the first generation of data stewards at Cidacs (the Centre for Dat
 
 ---
 
-
-### Research Areas
+## Research Areas
 
 - **Data Stewardship Researcher** at CIDACS (FIOCRUZ, Brazil)
 - **Digital Law** at [ITS Rio](https://www.posdireitodigital.com.br/obras-coletivas-direito-digital)
