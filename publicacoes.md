@@ -4,40 +4,39 @@ title: Publicações e Projetos
 permalink: /publicacoes/
 ---
 
-<h2> Publicações e Projetos</h2>
+<h2>Publicações e Projetos</h2>
 
 Fique por dentro do que já fiz:
 
 -----------------------------
 
-<h4> Certificações</h4>
+<h4>Certificações</h4>
 
 2024
 
 [Certificação em Privacidade e Proteção de Dados baseada na Lei Geral de Proteção de Dados (conhecida como LGPD no Brasil)](https://drive.google.com/file/d/1Taeyjs7fLxidPcmKoWjvoWIn5tsXmds5/view?usp=drive_link)
-  
-<h4> Liderança</h4>
 
-Fui lider de uma equipe que lidava com grandes bases de dados para pesquisas orientadas à melhoria de políticas públicas no
-[CIDACS](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima)(FIOCRUZ, Brazil).
+<h4>Liderança</h4>
+
+Fui líder de uma equipe que lidava com grandes bases de dados para pesquisas orientadas à melhoria de políticas públicas no [CIDACS](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima) (FIOCRUZ, Brazil).
 
 --------------------
 
-<h4> Pesquisa</h4>
+<h4>Pesquisa</h4>
 
-Redes Complexas:&nbsp;[Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29)
+Redes Complexas: [Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29)
 
 Educação Continuada: [Fortalecimento de iniciativas para expandir a educação em saúde e os programas de residência em saúde](https://cidacs.bahia.fiocruz.br/projeto/fortalecimento-das-acoes-de-expansao-da-educacao-em-saude-e-das-residencias-em-saude-desenvolvimento-de-capacidades-no-uso-de-dados-administrativos-para-pesquisa/) (passado).
 
-Informação e Epidemiologia, um projeto de colaboração científica e multidisciplinar focado na pandemia de Covid-19 (já concluído – 2020 a 2021). Link: [CoVida Network– Science, Information, and Solidarity](https://cidacs.bahia.fiocruz.br/redecovida/sobre/page/15/) 
-  
+Informação e Epidemiologia, um projeto de colaboração científica e multidisciplinar focado na pandemia de Covid-19 (já concluído – 2020 a 2021). Link: [CoVida Network – Science, Information, and Solidarity](https://cidacs.bahia.fiocruz.br/redecovida/sobre/page/15/)
+
 ----------------------------------
 
-<h4> Publicações</h4>
+<h4>Publicações</h4>
 
 2025
 
-Dados e política para inclusão digital de Dados Administrativos: [Daptiva](https://github.com/MairaLimaS/Dapiva)  
+Dados e política para inclusão digital de Dados Administrativos: [Daptiva](https://github.com/MairaLimaS/Dapiva)
 
 Inclusão digital desde a concepção: [Protótipo do radar de maturidade para dados administrativos](https://mairalmas.shinyapps.io/auroraBta_eng/)
 
@@ -60,7 +59,8 @@ Inclusão digital desde a concepção: [Protótipo do radar de maturidade para d
 [Nota técnica – Informação sobre Gênero, Raça/Cor e Posição Social no Controle da Pandemia de COVID-19 no Brasil](https://cidacs.bahia.fiocruz.br/redecovida/wp-content/uploads/2020/07/NT-Informa%C3%A7%C3%A3o-sobre-G%C3%AAnero-e-Ra%C3%A7a.pdf)
 
 ---
-<h4> Palestras e Mídia</h4>
+
+<h4>Palestras e Mídia</h4>
 
 2024
 
