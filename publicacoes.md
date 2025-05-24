@@ -17,9 +17,8 @@ Fique por dentro do que já fiz:
 [Certificação em Privacidade e Proteção de Dados baseada na Lei Geral de Proteção de Dados (conhecida como LGPD no Brasil)](https://drive.google.com/file/d/1Taeyjs7fLxidPcmKoWjvoWIn5tsXmds5/view?usp=drive_link)
 
 <h4>Liderança</h4>
-
-[CIDACS](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima)(FIOCRUZ, Brazil).
 Fui líder de uma equipe que lidava com grandes bases de dados para pesquisas orientadas à melhoria de políticas públicas
+[CIDACS/FIOCRUZ, Brazil)](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima).
 
 --------------------
 
@@ -29,7 +28,7 @@ Fui líder de uma equipe que lidava com grandes bases de dados para pesquisas or
 
 [Educação Continuada- Fortalecimento de iniciativas para expandir a educação em saúde e os programas de residência em saúde](https://cidacs.bahia.fiocruz.br/projeto/fortalecimento-das-acoes-de-expansao-da-educacao-em-saude-e-das-residencias-em-saude-desenvolvimento-de-capacidades-no-uso-de-dados-administrativos-para-pesquisa/)
 
-Informação e Epidemiologia, um projeto de colaboração científica e multidisciplinar focado na pandemia de Covid-19.[Link para a Rede CoVida – Ciência, Informação e Solidariedade.](https://cidacs.bahia.fiocruz.br/redecovida/sobre/page/15/)
+[Informação e Epidemiologia, um projeto de colaboração científica e multidisciplinar focado na pandemia de Covid-19.- Rede CoVida Ciência, Informação e Solidariedade.](https://cidacs.bahia.fiocruz.br/redecovida/sobre/page/15/)
 
 ----------------------------------
 
@@ -37,9 +36,9 @@ Informação e Epidemiologia, um projeto de colaboração científica e multidis
 
 2025
 
-Dados e política para inclusão digital de Dados Administrativos-[Daptiva](https://github.com/MairaLimaS/Dapiva)
+[Dados e política para inclusão digital de Dados Administrativos-Daptiva](https://github.com/MairaLimaS/Dapiva)
 
-Inclusão digital desde a concepção- [Protótipo do radar de maturidade para dados administrativos](https://mairalmas.shinyapps.io/auroraBta_eng/)
+[Inclusão digital desde a concepção- Protótipo do radar de maturidade para dados administrativos](https://mairalmas.shinyapps.io/auroraBta_eng/)
 
 [Capítulo 18 – A base legal para a coleta sistemática de dados de diversidade na saúde e saúde digital no contexto da inteligência artificial e sociedade conectada](https://itsrio.org/wp-content/uploads/2017/01/01-ITS_UERJ_POS_2024_V3.pdf)
 
