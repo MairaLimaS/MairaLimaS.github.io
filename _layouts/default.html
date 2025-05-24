@@ -4,41 +4,47 @@
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
   <style>
-    body {
-      font-family: sans-serif;
-      display: flex;
-      margin: 0;
-    }
+  body, main, p, h1, h2, h3, h4, h5, h6, ul, li {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
 
-    nav {
-      width: 180px;
-      background: #f0f0f0;
-      padding: 1em;
-      height: 100vh;
-    }
+  body {
+    display: flex;
+    margin: 0;
+  }
 
-    main {
-      padding: 2em;
-      flex-grow: 1;
-      font-size: 0.8rem;      /* Tamanho da fonte */
-      line-height: 1.8;       /* Espaçamento entre linhas */
-    }
+  nav {
+    width: 220px;
+    background: #f0f0f0;
+    padding: 1em;
+    height: 100vh;
+  }
 
-    p {
-      margin-top: 0.5em;
-      margin-bottom: 1em;
-      margin-left: 0;
-      margin-right: 0;
-      /* text-indent: 2em; */ /* Descomente se quiser recuo na primeira linha */
-    }
+  main {
+    padding: 2em;
+    flex-grow: 1;
+    font-size: 0.8rem;
+    line-height: 1.8;
+  }
 
-    a {
-      display: block;
-      margin: 0.5em 0;
-      text-decoration: none;
-      color: #333;
-    }
-  </style>
+  a {
+    display: block;
+    margin: 0.5em 0;
+    text-decoration: none;
+    color: #333;
+  }
+
+  {% if page.permalink == '/publicacoes/' %}
+  main p {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  {% endif %}
+</style>
 </head>
 <body>
   <nav>
