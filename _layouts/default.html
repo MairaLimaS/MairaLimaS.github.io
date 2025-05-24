@@ -37,7 +37,9 @@
     color: #333;
   }
   p {
-    white-space: pre-wrap;
+  white-space: pre-wrap; /* Mantém quebras manuais (de texto) */
+  word-wrap: break-word; /* Permite quebrar palavras longas para evitar estouro */
+  overflow-wrap: break-word; /* Compatibilidade extra: quebra palavras longas */
   }
 </style>
 </head>
