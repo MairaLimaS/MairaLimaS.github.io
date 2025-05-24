@@ -18,17 +18,18 @@ Fique por dentro do que já fiz:
 
 <h4>Liderança</h4>
 
-Fui líder de uma equipe que lidava com grandes bases de dados para pesquisas orientadas à melhoria de políticas públicas no [CIDACS](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima) (FIOCRUZ, Brazil).
+[CIDACS](https://cidacs.bahia.fiocruz.br/?s=Ma%C3%ADra+Lima) (FIOCRUZ, Brazil): Fui líder de uma equipe que lidava com grandes bases de dados para pesquisas orientadas à melhoria de políticas públicas,
 
 --------------------
 
 <h4>Pesquisa</h4>
 
-Redes Complexas:&nbsp;[Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29)
+[Fuxicos & Boatos](https://redessociaisecomplexas.org/?page_id=29): Redes Complexas.
 
 Educação Continuada: [Fortalecimento de iniciativas para expandir a educação em saúde e os programas de residência em saúde](https://cidacs.bahia.fiocruz.br/projeto/fortalecimento-das-acoes-de-expansao-da-educacao-em-saude-e-das-residencias-em-saude-desenvolvimento-de-capacidades-no-uso-de-dados-administrativos-para-pesquisa/)
 
-Informação e Epidemiologia, um projeto de colaboração científica e multidisciplinar focado na pandemia de Covid-19. Link: [CoVida Network – Ciência, Informação e Solidariedade.](https://cidacs.bahia.fiocruz.br/redecovida/sobre/page/15/)
+Informação e Epidemiologia, um projeto de colaboração científica e multidisciplinar focado na pandemia de Covid-19. 
+Link: [CoVida Network – Ciência, Informação e Solidariedade.](https://cidacs.bahia.fiocruz.br/redecovida/sobre/page/15/)
 
 ----------------------------------
 
