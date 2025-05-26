@@ -34,5 +34,4 @@ Espaços de troca e escuta para quem quer refletir sobre:
 - Estratégias de diversidade e governança pública
 
 Quer conversar sobre curadoria, proteção de dados, diversidade ou políticas públicas?
-[Agende seu horário aqui](https://calendly.com/sou-mairalima/)
-Email: lima.maira.souza@gmail.com
+[Agende seu horário aqui](https://calendly.com/sou-mairalima/) | Email: lima.maira.souza@gmail.com
