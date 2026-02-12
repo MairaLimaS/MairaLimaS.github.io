@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fontes & Produções — Maíra Lima de Souza</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ═══ DESIGN TOKENS ═══ */
+:root {
+  --cream:       #F5F0E8;
+  --cream-dark:  #E8DFD0;
+  --ink:         #1A1714;
+  --ink-soft:    #4A4440;
+  --gold:        #C9A84C;
+  --gold-light:  #E8D48B;
+  --terracotta:  #D4724A;
+  --terra-light: #F0C4A8;
+  --teal:        #3A7D72;
+  --teal-light:  #A8D5CE;
+  --plum:        #6B4F71;
+  --plum-light:  #C4A8CC;
+  --card-bg:     #FFFDF8;
+  --shadow:      0 2px 24px rgba(26,23,20,.08);
+  --shadow-lg:   0 8px 48px rgba(26,23,20,.12);
+}
+
+/* ═══ RESET & BASE ═══ */
+*, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+img { max-width:100%; display:block; }
+a { color:inherit; text-decoration:none; transition: color .2s; }
+
+/* ═══ TYPOGRAPHY ═══ */
+.serif { font-family:'Playfair Display', Georgia, serif; }
+.mono  { font-family:'DM Mono', monospace; }
+
+/* ═══ NAVIGATION ═══ */
+nav {
+  position: fixed; top:0; left:0; right:0; z-index:1000;
+  display: flex; align-items:center; justify-content: space-between;
+  padding: 20px 48px;
+  background: rgba(245,240,232,.95);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(26,23,20,.06);
+  transition: all .3s;
+}
+nav.scrolled { 
+  padding: 16px 48px;
+  box-shadow: var(--shadow); 
+}
+
+.nav-brand {
+  display: flex; align-items: center; gap: 14px;
+}
+.nav-brand .icon {
+  width: 42px; height: 42px;
+  background: linear-gradient(135deg, var(--teal), var(--gold));
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 12px rgba(58,125,114,.2);
+}
+.nav-brand .icon svg { width:22px; height:22px; }
+.nav-brand-text h1 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  margin-bottom: 2px;
+}
+.nav-brand-text p {
+  font-size: .72rem;
+  color: var(--ink-soft);
+  letter-spacing: .02em;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+.nav-menu a {
+  font-size: .88rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  position: relative;
+}
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--teal);
+  transition: width .3s;
+}
+.nav-menu a:hover {
+  color: var(--teal);
+}
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+.nav-cta {
+  background: var(--teal);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 24px;
+  font-size: .84rem;
+  font-weight: 600;
+  transition: all .3s;
+  box-shadow: 0 4px 16px rgba(58,125,114,.25);
+}
+.nav-cta:hover {
+  background: var(--ink);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26,23,20,.3);
+}
+
+/* Mobile menu */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.nav-toggle span {
+  width: 25px;
+  height: 2px;
+  background: var(--ink);
+  transition: all .3s;
+}
+
+@media (max-width: 968px) {
+  .nav-menu {
+    position: fixed;
+    top: 82px;
+    right: -100%;
+    width: 280px;
+    height: calc(100vh - 82px);
+    background: var(--cream);
+    flex-direction: column;
+    padding: 32px;
+    gap: 24px;
+    box-shadow: -4px 0 24px rgba(26,23,20,.1);
+    transition: right .4s;
+  }
+  .nav-menu.active {
+    right: 0;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+  nav {
+    padding: 20px 24px;
+  }
+}
+
+/* ═══ HERO ═══ */
+.hero {
+  padding: 140px 48px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: .25;
+  pointer-events: none;
+  animation: float 20s ease-in-out infinite;
+}
+.hero-orb--1 { 
+  width: 500px; height: 500px; 
+  background: var(--gold-light); 
+  top: -200px; left: -100px;
+}
+.hero-orb--2 { 
+  width: 400px; height: 400px; 
+  background: var(--teal-light); 
+  top: 100px; right: -100px;
+  animation-delay: -5s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -30px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(.95); }
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  background: rgba(58,125,114,.12);
+  border-radius: 24px;
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--teal);
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero .lead {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  max-width: 700px;
+  margin: 0 auto 32px auto;
+  line-height: 1.7;
+}
+
+.tag-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.tag {
+  padding: 6px 16px;
+  background: rgba(201,168,76,.15);
+  border-radius: 20px;
+  font-size: .85rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* ═══ MAIN CONTENT ═══ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 48px;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+.section-header {
+  margin-bottom: 32px;
+}
+
+.section-header h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.section-header p {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
+
+/* ═══ PUBLICATION CARDS ═══ */
+.pub-list {
+  display: grid;
+  gap: 24px;
+}
+
+.pub-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+  transition: all .3s;
+  border-left: 4px solid transparent;
+}
+
+.pub-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-left-color: var(--teal);
+}
+
+.pub-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.pub-card h3 a {
+  color: var(--ink);
+  transition: color .2s;
+}
+
+.pub-card h3 a:hover {
+  color: var(--teal);
+}
+
+.pub-meta {
+  display: block;
+  font-size: .9rem;
+  color: var(--ink-soft);
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.pub-type {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(58,125,114,.1);
+  border-radius: 12px;
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--teal);
+  margin-top: 12px;
+}
+
+/* ═══ LINKS ═══ */
+.pub-card a {
+  color: var(--teal);
+  font-weight: 500;
+}
+
+.pub-card a:hover {
+  text-decoration: underline;
+}
+
+/* ═══ SPECIAL SECTIONS ═══ */
+.topics-box {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+  margin-top: 60px;
+}
+
+.topics-box h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--ink);
+}
+
+.topics-list {
+  font-size: .95rem;
+  color: var(--ink-soft);
+  line-height: 1.8;
+}
+
+/* ═══ FOOTER ═══ */
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,.8);
+  padding: 60px 48px 32px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer-brand h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.footer-brand p {
+  font-size: .95rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s;
+}
+
+.social-icon:hover {
+  background: var(--teal);
+  transform: translateY(-2px);
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-column h4 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,.7);
+  font-size: .9rem;
+  transition: color .2s;
+}
+
+.footer-links a:hover {
+  color: var(--teal-light);
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255,255,255,.1);
+  text-align: center;
+  font-size: .85rem;
+  color: rgba(255,255,255,.6);
+}
+
+.footer-bottom p {
+  margin-bottom: 8px;
+}
+
+.footer-bottom a {
+  color: rgba(255,255,255,.7);
+  transition: color .2s;
+}
+
+.footer-bottom a:hover {
+  color: var(--teal-light);
+}
+
+/* ═══ ANIMATIONS ═══ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all .8s cubic-bezier(.4, 0, .2, 1);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 24px 60px;
+  }
+  
+  .container {
+    padding: 60px 24px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  footer {
+    padding: 48px 24px 24px;
+  }
+  
+  .footer-content {
+    gap: 32px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ NAVIGATION ═══ -->
+<nav id="navbar">
+  <div class="nav-brand">
+    <div class="icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+      </svg>
+    </div>
+    <div class="nav-brand-text">
+      <h1>Maíra Lima</h1>
+      <p>Data Stewardship & IA Responsável</p>
+    </div>
+  </div>
+  
+  <div class="nav-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="site_integrado_maira.html">Home</a></li>
+    <li><a href="site_integrado_maira.html#expertise">Expertise</a></li>
+    <li><a href="site_integrado_maira.html#portfolio">Portfólio</a></li>
+    <li><a href="site_integrado_maira.html#contato" class="nav-cta">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-orb hero-orb--1"></div>
+  <div class="hero-orb hero-orb--2"></div>
+  
+  <div class="hero-content">
+    <div class="hero-badge">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+      </svg>
+      Produção Acadêmica e Institucional
+    </div>
+    
+    <h1>Fontes & Produções</h1>
+    
+    <p class="lead">
+      Coletânea completa de publicações online, artigos científicos, posts institucionais, 
+      repositório ARCA, notícias e perfis públicos relacionados à produção acadêmica e institucional.
+    </p>
+    
+    <div class="tag-container">
+      <span class="tag">Atualizado Jan/2026</span>
+      <span class="tag">CIDACS</span>
+      <span class="tag">Fiocruz</span>
+      <span class="tag">Curadoria de Dados</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MAIN CONTENT ═══ -->
+<div class="container">
+
+  <!-- Artigos Científicos -->
+  <section class="section fade-in" id="artigos-cientificos">
+    <div class="section-header">
+      <h2>Artigos Científicos</h2>
+    </div>
+    
+    <div class="pub-list">
+      <div class="pub-card">
+        <h3>
+          <a href="https://ijpds.org/article/view/2163" target="_blank" rel="noopener">
+            CIDACS' efforts towards an inclusive and dialogic data governance in Brazil: a focused literature review
+          </a>
+        </h3>
+        <span class="pub-meta">
+          Almeida, Bethânia de A.; Carreiro, Roberto P.; <strong>Souza, Maíra L.</strong>; Barreto, Mauricio L. — 
+          International Journal of Population Data Science (IJPDS), v.6, n.1, 2024. DOI: 10.23889/ijpds.v6i1.2163. 
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11606382/" target="_blank" rel="noopener">Acesso PMC</a>
+        </span>
+        <span class="pub-type">Artigo científico — Revisão de literatura focada</span>
+      </div>
+      
+      <div class="pub-card">
+        <h3>
+          <a href="https://abpnrevista.org.br/site/article/view/1974" target="_blank" rel="noopener">
+            Artigo em ABPN Revista
+          </a>
+        </h3>
+        <span class="pub-meta">
+          <strong>Souza, Maíra Lima de</strong> — Associação Brasileira de Pesquisadores Negros (ABPN)
+        </span>
+        <span class="pub-type">Artigo acadêmico</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documentos Técnicos -->
+  <section class="section fade-in" id="documentos-tecnicos">
+    <div class="section-header">
+      <h2>Documentos Técnicos e Working Papers</h2>
+    </div>
+    
+    <div class="pub-list">
+      <div class="pub-card">
+        <h3>
+          <a href="https://itsrio.org/wp-content/uploads/2017/01/01-ITS_UERJ_POS_2024_V3.pdf" target="_blank" rel="noopener">
+            As bases legais no sistema de coleta de informação sobre a diversidade na Saúde e na Saúde Digital
+          </a>
+        </h3>
+        <span class="pub-meta">
+          <strong>Souza, Maíra Lima de</strong> — ITS Rio/UERJ, 2024
+        </span>
+        <span class="pub-type">Working paper — Bases legais e diversidade</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guias e Manuais -->
+  <section class="section fade-in" id="guias-manuais">
+    <div class="section-header">
+      <h2>Guias e Manuais (Ministério da Saúde)</h2>
+    </div>
+    
+    <div class="pub-list">
+      <div class="pub-card">
+        <h3>
+          <a href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2025/guia-rapido-de-governanca-de-dados.pdf/view" target="_blank" rel="noopener">
+            Guia Rápido de Governança de Dados
+          </a>
+        </h3>
+        <span class="pub-meta">
+          Ministério da Saúde — Centrais de Conteúdo, 2025
+        </span>
+        <span class="pub-type">Guia técnico — Governança de dados em saúde</span>
+      </div>
+      
+      <div class="pub-card">
+        <h3>
+          <a href="https://bvsms.saude.gov.br/bvs/publicacoes/guiabasico_privacidade_seguranca_informacao.pdf" target="_blank" rel="noopener">
+            Guia Básico de Privacidade e Segurança da Informação
+          </a>
+        </h3>
+        <span class="pub-meta">
+          Biblioteca Virtual em Saúde (BVS) do Ministério da Saúde
+        </span>
+        <span class="pub-type">Guia técnico — Privacidade e segurança</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cursos e Certificações -->
+  <section class="section fade-in" id="cursos-certificacoes">
+    <div class="section-header">
+      <h2>Cursos e Certificações</h2>
+    </div>
+    
+    <div class="pub-list">
+      <div class="pub-card">
+        <h3>Data Governance in Low and Middle Income Countries</h3>
+        <span class="pub-meta">
+          University of the West of England (UWE Bristol) — Course Lead: Elizabeth Green e Felix Ritchie. 
+          Financiado pelo NIHR (National Institute for Health and Care Research)
+        </span>
+        <span class="pub-type">Curso de especialização — Certificação concluída</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atividades Docentes -->
+  <section class="section fade-in" id="atividades-docentes">
+    <div class="section-header">
+      <h2>Atividades Docentes e de Formação</h2>
+    </div>
+    
+    <div class="pub-list">
+      <div class="pub-card">
+        <h3>Módulo VII - Técnicas e Métodos aplicados à Curadoria de Dados em Saúde</h3>
+        <span class="pub-meta">
+          Programa de Formação Técnica em Ciência, Tecnologia e Inovação em Saúde (Profortec-Saúde), 
+          perfil Ciências e Dados — Instituto Gonçalo Moniz/Fiocruz Bahia, dezembro de 2022 a fevereiro de 2023
+        </span>
+        <span class="pub-meta">
+          Carga horária: 6h teóricas + 10h práticas. Declaração assinada por Carlos Antonio de Souza Teles Santos 
+          (Supervisor Profortec) e Claudia Ida Brodskyn (Vice Diretora de Ensino e Informação - IGM)
+        </span>
+        <span class="pub-type">Docência — Tutoria de disciplina</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eventos e Palestras -->
+  <section class="section fade-in" id="eventos-palestras">
+    <div class="section-header">
+      <h2>Eventos, Palestras e Webinários</h2>
+    </div>
+    
+    <div class="pub-list">
+      <div class="pub-card">
+        <h3>
+          <a href="https://www.youtube.com/watch?v=lZSOaDCDZ30" target="_blank" rel="noopener">
+           Webinar: Compartilhamento e acesso aos dados para pesquisa em saúde: a experiência do Cidacs
+          </a>
+        </h3>
+        <span class="pub-meta">
+          <strong>Souza, Maíra Lima de</strong> — CIDACS/Fiocruz Bahia, 26 de outubro de 2021
+        </span>
+        <span class="pub-type">Webinar gravado — YouTube (55 minutos)</span>
+      </div>
+      
+      <div class="pub-card">
+        <h3>
+          <a href="https://www.gov.br/saude/pt-br/assuntos/noticias/2022/junho/incorporacao-da-lei-geral-de-protecao-de-dados-sera-tema-de-webinar" target="_blank" rel="noopener">
+            Webinar governamental: Privacidade e Segurança da Informação no CIDACS/Fiocruz/BA
+          </a>
+        </h3>
+        <span class="pub-meta">
+          <strong>Souza, Maira Lima</strong> — Webinar Ministério da Saúde — 15 de junho de 2022
+        </span>
+        <span class="pub-type">Apresentação — LGPD e ambiente seguro de pesquisa </span>
+      </div>
+      
+      <div class="pub-card">
+        <h3>
+          <a href="https://clubedata.com.br/paginas/conteudo/6384/Dialogos-DPGC-2025" target="_blank" rel="noopener">
+            Palestra: O design inclusivo nos Sistemas Administrativos Gov
+          </a>
+        </h3>
+        <span class="pub-meta">
+          <strong>Souza, Maira Lima</strong> — Diálogos DPGC25 — 04 de dezembro de 2025. 
+        </span>
+        <span class="pub-type">Apresentação — Dados administrativos</span>
+      </div>
+     
+    </div>
+  </section>
+
+  <!-- Anais de Congressos -->
+  <section class="section fade-in" id="anais-congressos">
+    <div class="section-header">
+      <h2> Organização de Eventos Científicos</h2>
+    </div>
+    
+    <div class="pub-list">
+      <div class="pub-card">
+        <h3>
+          <a href="https://proceedings.science/abrascao-2022/trabalhos/curadoria-digital-de-dados-de-saude-como-fonte-de-producao-de-conhecimento-para?lang=pt-br" target="_blank" rel="noopener">
+            Curadoria digital de dados de saúde como fonte de produção de conhecimento para o avanço científico
+          </a>
+        </h3>
+        <span class="pub-meta">
+          Santos, Carlos Antonio de Souza Teles; Ichihara, Maria Yury Travassos; <strong>Souza, Maira Lima de</strong>; 
+          Normando, Priscilla Cavalcante; Neto, Luiz Conrado de Farias; Carreiro, Roberto; Araújo, Bethania; 
+          Strina, Agostino; Cabral, Liliana; Barreto, Mauricio L. — Anais do 13º Congresso Brasileiro de Saúde 
+          Coletiva (Abrascão 2022), Vol 2, 2022. ISSN: 2965-2154
+        </span>
+        <span class="pub-type">Relato de Pesquisa — Curadoria digital</span>
+      </div>
+      
+      <div class="pub-list">
+      <div class="pub-card">
+        <h3>
+          <a href="https://proceedings.science/abrascao-2022/trabalhos/conformacao-de-diretrizes-de-curadoria-para-garantir-a-qualidade-de-informacoes?lang=pt-br" target="_blank" rel="noopener">
+            Conformação de diretrizes de curadoria para garantir a qualidade de informações em saúde pública: proposta de conscientização utilizando os princípios FAIR e FACT.
+          </a>
+        </h3>
+        <span class="pub-meta">
+         Neto, Luiz Conrado de Farias; <strong>Souza, Maira Lima de</strong>; Normando, Priscilla; Carvalho, Eric Maia Pereira; Cavalcante, Gabriel Martins Lopes. — Anais do 13º Congresso Brasileiro de Saúde 
+          Coletiva (Abrascão 2022), Vol 2, 2022. ISSN: 2965-2154
+        </span>
+        <span class="pub-type">Relato de Pesquisa — Curadoria digital</span>
+      </div>
+      
+      <div class="pub-list">
+      <div class="pub-card">
+        <h3>
+          III Simpósio Brasileiro de Teoria e Ciência de Redes (SimBraRedes)
+          </a>
+        </h3>
+        <span class="pub-meta">
+          Centro de Eventos do Centro Universitário do SENAI CIMATEC, Salvador/Bahia — 21 a 23 de outubro de 2024. Presidente: Carlos César Ribeiro Santos. Apoio: CAPES, SENAI CIMATEC, UNEB
+        </span>
+        <span class="pub-type">Organização de evento científico — Simpósio nacional sobre teoria e ciência de redes</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Repositório ARCA -->
+  <section class="section fade-in" id="repositorio-arca">
+    <div class="section-header">
+      <h2>Repositório ARCA (Fiocruz)</h2>
+    </div>
+    
+    <div class="pub-list">
+      <div class="pub-card">
+        <h3>
+          <a href="https://arca.fiocruz.br/items/8aa49d28-f332-4b89-a0f7-6b1e4ff3c34d" target="_blank" rel="noopener">
+            Guia para o acesso aos dados integrados na pesquisa em saúde
+          </a>
+        </h3>
+        <span class="pub-meta">
+          <strong>Souza, Maíra Lima de</strong>; Farias Neto, Luiz Conrado; Ichihara, Maria Yury; 
+          Sebastião, Mariana; Rabelo, Gilson — CIDACS/Fiocruz Bahia, 2022
+        </span>
+        <span class="pub-type">Guia técnico — Acesso a dados integrados</span>
+      </div>
+      
+      <div class="pub-card">
+        <h3>
+          <a href="https://arca.fiocruz.br/handle/icict/41472" target="_blank" rel="noopener">
+            Boletim CoVida: Pandemia de COVID-19: fortalecer o Sistema de Saúde para proteger a população
+          </a>
+        </h3>
+        <span class="pub-meta">
+          RedeCoVida/UFBA/Fiocruz Bahia/CIDACS, Edição nº 04, 26/04/2020 — <strong>Lima, Maíra</strong> 
+          como Coordenação de Epidemiologia e Dados
+        </span>
+        <span class="pub-type">Boletim técnico — COVID-19</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zenodo -->
+  <section class="section fade-in" id="repositorios-dados">
+    <div class="section-header">
+      <h2>Publicações no Zenodo</h2>
+    </div>
+    
+    <div class="pub-list">
+      <div class="pub-card">
+        <h3>
+          <a href="https://zenodo.org/records/18135557" target="_blank" rel="noopener">
+            Data Stewardship of Governmental Administrative Data: Governance, Maturity and Diversity in the Brazilian context
+          </a>
+        </h3>
+        <span class="pub-meta">
+          <strong>Souza, Maíra</strong> — Zenodo, janeiro de 2026. DOI: 10.5281/zenodo.18135557
+        </span>
+        <span class="pub-type">Nota técnica — Framework Aurora/DAPIVA</span>
+      </div>
+      
+      <div class="pub-card">
+        <h3>
+          <a href="https://zenodo.org/records/16732883" target="_blank" rel="noopener">
+            Boletim CoVida: pandemia no Brasil: Destaque à situação da Bahia
+          </a>
+        </h3>
+        <span class="pub-meta">
+          Líder do projeto: <strong>Souza, Maíra</strong> (Coordenação de Epidemiologia e Dados) — 
+          Zenodo, abril de 2020. DOI: 10.5281/zenodo.16732883
+        </span>
+        <span class="pub-type">Relatório — Primeira edição Boletim CoVida</span>
+      </div>
+      
+      <div class="pub-card">
+        <h3>
+          <a href="https://zenodo.org/records/13387282" target="_blank" rel="noopener">
+            Overview of the initial phase of scientific production on COVID-19 during the pandemic
+          </a>
+        </h3>
+        <span class="pub-meta">
+          <strong>Souza, Maira Lima</strong> — Zenodo, agosto de 2024. DOI: 10.1140/epjb/s10051-024-00734-z
+        </span>
+        <span class="pub-type">Artigo — Análise de produção científica COVID-19</span>
+      </div>
+      
+      <div class="pub-card">
+        <h3>
+          <a href="https://zenodo.org/records/13387012" target="_blank" rel="noopener">
+            Sistemas de informação para a COVID-19
+          </a>
+        </h3>
+        <span class="pub-meta">
+          <strong>Souza, Maira Lima</strong>; Sena, Samila Oliveira Lima; Ichihara, Maria Yury Travassos — 
+          Zenodo, agosto de 2024. DOI: 10.9771/9786556300757.003
+        </span>
+        <span class="pub-type">Capítulo de livro — Curadoria de dados COVID-19</span>
+      </div>
+      
+      <div class="pub-card">
+        <h3>
+          <a href="https://zenodo.org/records/13386835" target="_blank" rel="noopener">
+            Informação sobre gênero, raça/etnia e posição social para o controle da pandemia de COVID-19 no Brasil
+          </a>
+        </h3>
+        <span class="pub-meta">
+          <strong>Souza, Maíra Lima</strong> — Zenodo, agosto de 2024. DOI: 10.5281/zenodo.13386835
+        </span>
+        <span class="pub-type">Nota técnica — Desagregação de dados sociodemográficos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notícias -->
+  <section class="section fade-in" id="noticias">
+    <div class="section-header">
+      <h2>Notícias e Matérias</h2>
+    </div>
+    
+    <div class="pub-list">
+      <div class="pub-card">
+        <h3>
+          <a href="https://www.gov.br/saude/pt-br/assuntos/noticias/2022/junho/incorporacao-da-lei-geral-de-protecao-de-dados-sera-tema-de-webinar" target="_blank" rel="noopener">
+            Incorporação da Lei Geral de Proteção de Dados será tema de webinar
+          </a>
+        </h3>
+        <span class="pub-meta">
+          Ministério da Saúde, 14 de junho de 2022 — Destaca participação de Eliseu Torres e 
+          <strong>Maíra Lima de Souza</strong> (CIDACS/Fiocruz BA) na palestra "Privacidade e Segurança 
+          da Informação no CIDACS/Fiocruz/BA"
+        </span>
+        <span class="pub-type">Notícia governamental — Implementação LGPD</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section class="section fade-in" id="projetos">
+    <div class="section-header">
+      <h2>Atuação em projetos</h2>
+    </div>
+    
+    <div class="pub-list">
+      <div class="pub-card">
+        <h3>
+          <a href="https://cidacs.bahia.fiocruz.br/sedhi/equipe/maira-lima-de-souza/" target="_blank" rel="noopener">
+            Perfil — SEDHI/CIDACS
+          </a>
+        </h3>
+        <span class="pub-meta">
+          Líder da equipe de Curadoria de Dados Digitais (Big Data) do CIDACS
+        </span>
+        <span class="pub-type">Perfil institucional</span>
+      </div>
+      
+      <div class="pub-card">
+        <h3>
+          <a href="https://cidacs.bahia.fiocruz.br/plataformazika/pesquisador/maira-lima-de-souza/" target="_blank" rel="noopener">
+            Perfil — Plataforma Zika/CIDACS
+          </a>
+        </h3>
+        <span class="pub-meta">
+          Informações sobre formação e atuação profissional
+        </span>
+        <span class="pub-type">Perfil de projeto</span>
+      </div>
+      
+      <div class="pub-card">
+        <h3>
+          <a href="https://cidacs.bahia.fiocruz.br/projeto/fortalecimento-das-acoes-de-expansao-da-educacao-em-saude-e-das-residencias-em-saude-desenvolvimento-de-capacidades-no-uso-de-dados-administrativos-para-pesquisa/" target="_blank" rel="noopener">
+            Projeto — Fortalecimento das ações de expansão da educação em saúde e das residências em saúde
+          </a>
+        </h3>
+        <span class="pub-meta">
+          Vigência: 20/06/2023 a 30/07/2025 — <strong>Maíra Lima de Souza</strong> integra a equipe multidisciplinar. 
+          Financiamento: Inova Fiocruz
+        </span>
+        <span class="pub-type">Projeto de pesquisa — Dados administrativos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perfis -->
+  <section class="section fade-in" id="perfis">
+    <div class="section-header">
+      <h2>Perfis Acadêmicos</h2>
+    </div>
+    
+    <div class="pub-list">
+      <div class="pub-card">
+        <h3>
+          <a href="https://lattes.cnpq.br/5998313597414695" target="_blank" rel="noopener">
+            Currículo Lattes
+          </a>
+        </h3>
+        <span class="pub-type">Plataforma CNPq</span>
+      </div>
+      
+      <div class="pub-card">
+        <h3>
+          <a href="https://independent.academia.edu/MairaLimaSouza" target="_blank" rel="noopener">
+            Academia.edu
+          </a>
+        </h3>
+        <span class="pub-type">Rede acadêmica</span>
+      </div>
+      
+      <div class="pub-card">
+        <h3>
+          <a href="https://www.linkedin.com/in/mairalimas/" target="_blank" rel="noopener">
+            LinkedIn
+          </a>
+        </h3>
+        <span class="pub-type">Rede profissional</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Áreas Temáticas -->
+  <div class="topics-box fade-in">
+    <h3>Áreas Temáticas</h3>
+    <p class="topics-list">
+      <strong>Principais temas abordados nas publicações:</strong> Governança de Dados • Curadoria Digital de Dados • 
+      Ciência de Dados em Saúde • Diversidade e Dados • Lei Geral de Proteção de Dados (LGPD) • Anonimização • 
+      Princípios FAIR • Princípios FACT • Dados Administrativos Governamentais • Big Data em Saúde Pública • Raça e Etnicidade em Dados • 
+      Sistemas de Informação em Saúde • Metadados • Privacidade e Segurança da Informação • Bases Legais de Coleta • 
+      Saúde Digital • Teoria e Ciência de Redes
+    </p>
+  </div>
+
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/mairalimas/" target="_blank" class="social-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="https://lattes.cnpq.br/5998313597414695" target="_blank" class="social-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/MairaLimaS/Dapiva" target="_blank" class="social-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Navegação</h4>
+      <ul class="footer-links">
+        <li><a href="site_integrado_maira.html">Home</a></li>
+        <li><a href="site_integrado_maira.html#expertise">Expertise</a></li>
+        <li><a href="site_integrado_maira.html#portfolio">Portfólio</a></li>
+        <li><a href="site_integrado_maira.html#consultoria">Consultoria</a></li>
+        <li><a href="site_integrado_maira.html#recursos">Recursos</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Recursos</h4>
+      <ul class="footer-links">
+        <li><a href="https://mairalimas.github.io/competencias-data-steward/" target="_blank">Matriz de Competências</a></li>
+        <li><a href="https://mairalmas.shinyapps.io/auroraBta/" target="_blank">Framework Aurora</a></li>
+        <li><a href="https://zenodo.org/records/18135557" target="_blank">Publicações Zenodo</a></li>
+        <li><a href="https://arca.fiocruz.br/" target="_blank">Repositório ARCA</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Institucional</h4>
+      <ul class="footer-links">
+        <li><a href="https://github.com/MairaLimaS/Dapiva" target="_blank">GitHub DAPIVA</a></li>
+        <li><a href="https://lattes.cnpq.br/5998313597414695" target="_blank">Currículo Lattes</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>
+      © 2026 Maíra Lima de Souza. Toolkit Aurora / Framework DAPIVA.
+    </p>
+    <p>
+      Material disponibilizado para fins acadêmicos, científicos e educacionais. 
+      Uso comercial requer autorização expressa.
+    </p>
+    <p>
+      Compilação ampliada para uso em portfólio, divulgação científica e referência institucional. 
+      Atualizado em janeiro de 2026.
+    </p>
+  </div>
+</footer>
+
+<!-- ═══ JAVASCRIPT ═══ -->
+<script>
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Mobile menu toggle
+function toggleMenu() {
+  const menu = document.getElementById('navMenu');
+  menu.classList.toggle('active');
+}
+
+// Close menu when clicking on link
+document.querySelectorAll('.nav-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('navMenu').classList.remove('active');
+  });
+});
+
+// Fade-in animation on scroll
+const observerOptions = {
+  threshold: 0.15,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 100);
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.fade-in').forEach(el => {
+  observer.observe(el);
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href !== '#') {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        const offsetTop = target.offsetTop - 100;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>
