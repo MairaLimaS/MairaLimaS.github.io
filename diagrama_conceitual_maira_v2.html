@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Método de Obtenção do Conhecimento | Maíra Lima</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ── DESIGN SYSTEM: mairalimas.github.io ── */
+:root {
+  --cream:       #F5F0E8;
+  --cream-dark:  #E8DFD0;
+  --ink:         #1A1714;
+  --ink-soft:    #4A4440;
+  --gold:        #C9A84C;
+  --gold-light:  #E8D48B;
+  --terracotta:  #D4724A;
+  --terra-light: #F0C4A8;
+  --teal:        #3A7D72;
+  --teal-light:  #A8D5CE;
+  --plum:        #6B4F71;
+  --plum-light:  #C4A8CC;
+  --card-bg:     #FFFDF8;
+  --shadow:      0 2px 24px rgba(26,23,20,.08);
+  --shadow-lg:   0 8px 48px rgba(26,23,20,.12);
+  --shadow-xl:   0 16px 64px rgba(26,23,20,.16);
+}
+
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; }
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ── ORBS (same as site hero) ── */
+.orb {
+  position:fixed;
+  border-radius:50%;
+  filter:blur(120px);
+  opacity:.22;
+  pointer-events:none;
+  animation: float 20s ease-in-out infinite;
+  z-index:0;
+}
+.orb-1 { width:550px;height:550px;background:var(--gold-light);  top:-180px;left:-120px; }
+.orb-2 { width:450px;height:450px;background:var(--teal-light);  bottom:-80px;right:-80px;animation-delay:-6s; }
+.orb-3 { width:300px;height:300px;background:var(--terra-light); top:35%;right:8%;animation-delay:-12s; }
+@keyframes float {
+  0%,100% { transform:translate(0,0) scale(1); }
+  33%      { transform:translate(28px,-28px) scale(1.05); }
+  66%      { transform:translate(-18px,18px) scale(.95); }
+}
+
+/* ── PAGE WRAPPER ── */
+.page {
+  position:relative; z-index:1;
+  max-width:920px;
+  margin:0 auto;
+  padding: 72px 32px 80px;
+}
+
+/* ── HEADER ── */
+.header { text-align:center; margin-bottom:52px; animation:fadeInUp .7s ease-out .1s both; }
+
+.hero-badge {
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 18px;
+  background:rgba(58,125,114,.12);
+  border-radius:24px;
+  font-size:.78rem; font-weight:600;
+  color:var(--teal);
+  letter-spacing:.05em;
+  margin-bottom:18px;
+}
+.hero-badge svg { width:14px;height:14px;stroke:var(--teal);fill:none;stroke-width:2.5; }
+
+.header h1 {
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2rem,5vw,3.2rem);
+  font-weight:700;
+  letter-spacing:-.02em;
+  line-height:1.1;
+  margin-bottom:14px;
+}
+.header h1 .highlight {
+  background:linear-gradient(135deg,var(--teal),var(--gold));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  background-clip:text;
+  font-style:italic;
+}
+
+.header-lead {
+  font-size:.98rem;
+  color:var(--ink-soft);
+  max-width:560px;
+  margin:0 auto;
+  line-height:1.75;
+}
+
+.divider {
+  width:60px; height:3px;
+  background:linear-gradient(90deg,var(--teal),var(--gold));
+  border-radius:2px;
+  margin:20px auto 0;
+}
+
+/* ── DIAGRAM CARD ── */
+.diagram-card {
+  background:var(--card-bg);
+  border-radius:24px;
+  padding:40px 32px 36px;
+  box-shadow:var(--shadow-lg);
+  border:1px solid rgba(26,23,20,.06);
+  margin-bottom:32px;
+  animation:fadeInUp .8s ease-out .3s both;
+  position:relative;
+  overflow:hidden;
+}
+
+/* subtle top border gradient */
+.diagram-card::before {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:3px;
+  background:linear-gradient(90deg,var(--teal),var(--gold),var(--terracotta));
+  border-radius:24px 24px 0 0;
+}
+
+.diagram-hint {
+  text-align:center;
+  font-size:.75rem;
+  color:var(--ink-soft);
+  opacity:.6;
+  font-style:italic;
+  margin-bottom:8px;
+  font-family:'DM Mono',monospace;
+  letter-spacing:.04em;
+}
+
+#cosmos {
+  width:100%; height:auto;
+  display:block; overflow:visible;
+}
+
+/* ── LEGEND ── */
+.legend {
+  display:flex; gap:20px;
+  justify-content:center; flex-wrap:wrap;
+  margin-top:20px;
+  padding-top:20px;
+  border-top:1px solid rgba(26,23,20,.06);
+}
+.legend-item {
+  display:flex; align-items:center; gap:7px;
+  font-size:.75rem; color:var(--ink-soft);
+}
+.legend-dot {
+  width:10px;height:10px;
+  border-radius:50%; flex-shrink:0;
+}
+
+/* ── SECTION LABEL ── */
+.section-tag {
+  display:inline-block;
+  font-size:.72rem; font-weight:600;
+  letter-spacing:.08em; text-transform:uppercase;
+  padding:5px 13px; border-radius:20px;
+  margin-bottom:12px;
+}
+.tag-teal   { background:var(--teal-light);  color:#245A50; }
+.tag-gold   { background:var(--gold-light);  color:#7A6520; }
+.tag-terra  { background:var(--terra-light); color:#8C3D20; }
+
+/* ── METHOD FLOW ── */
+.flow-wrap {
+  margin-bottom:32px;
+  animation:fadeInUp .8s ease-out .5s both;
+}
+.flow-header {
+  display:flex; align-items:center; gap:14px;
+  margin-bottom:18px;
+}
+.flow-header h2 {
+  font-family:'Playfair Display',serif;
+  font-size:1.4rem; font-weight:600;
+  letter-spacing:-.01em;
+}
+.flow-header .divider { margin:0; flex-shrink:0; }
+
+.flow-steps {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0;
+  background:var(--card-bg);
+  border-radius:20px;
+  box-shadow:var(--shadow);
+  border:1px solid rgba(26,23,20,.07);
+  overflow:hidden;
+}
+
+.flow-step {
+  padding:20px 18px;
+  border-right:1px solid rgba(26,23,20,.06);
+  position:relative;
+  transition:background .25s, transform .25s;
+  cursor:default;
+}
+.flow-step:last-child { border-right:none; }
+.flow-step:hover { background:rgba(58,125,114,.04); }
+
+/* Top accent per step */
+.flow-step::before {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:3px;
+  opacity:0; transition:opacity .25s;
+}
+.flow-step:hover::before { opacity:1; }
+.flow-step:nth-child(1)::before { background:var(--teal); }
+.flow-step:nth-child(2)::before { background:var(--gold); }
+.flow-step:nth-child(3)::before { background:var(--terracotta); }
+.flow-step:nth-child(4)::before { background:var(--plum); }
+
+.flow-n {
+  font-family:'Playfair Display',serif;
+  font-size:2rem; font-weight:400;
+  color:rgba(26,23,20,.1);
+  line-height:1; margin-bottom:6px;
+}
+.flow-title {
+  font-family:'Playfair Display',serif;
+  font-size:.92rem; font-weight:600;
+  color:var(--ink); margin-bottom:4px;
+}
+.flow-q {
+  font-size:.73rem; font-style:italic;
+  color:var(--teal); margin-bottom:6px;
+}
+.flow-desc {
+  font-size:.76rem;
+  color:var(--ink-soft);
+  line-height:1.55;
+}
+
+.flow-arrow {
+  position:absolute; top:50%; right:-10px;
+  transform:translateY(-50%);
+  width:0;height:0;
+  border-top:7px solid transparent;
+  border-bottom:7px solid transparent;
+  border-left:10px solid rgba(58,125,114,.25);
+  z-index:2;
+}
+.flow-step:last-child .flow-arrow { display:none; }
+
+/* ── TOOLTIP ── */
+.tooltip {
+  position:fixed; pointer-events:none;
+  background:var(--ink);
+  border-radius:14px;
+  padding:14px 18px;
+  max-width:270px;
+  z-index:100;
+  opacity:0; transform:translateY(6px);
+  transition:opacity .2s, transform .2s;
+  box-shadow:var(--shadow-xl);
+}
+.tooltip.show { opacity:1; transform:translateY(0); }
+.tooltip-title {
+  font-family:'Playfair Display',serif;
+  font-size:.95rem; font-weight:600;
+  color:var(--gold-light);
+  margin-bottom:6px;
+}
+.tooltip-body {
+  font-size:.78rem;
+  color:rgba(245,240,232,.75);
+  line-height:1.6;
+}
+
+/* ── FOOTER ── */
+.footer {
+  text-align:center;
+  padding-top:12px;
+  animation:fadeInUp .8s ease-out .7s both;
+}
+.footer-inner {
+  display:inline-flex; align-items:center; gap:10px;
+  padding:10px 24px;
+  background:var(--card-bg);
+  border-radius:24px;
+  border:1px solid rgba(26,23,20,.07);
+  box-shadow:var(--shadow);
+}
+.footer-dot {
+  width:8px;height:8px;border-radius:50%;
+  background:linear-gradient(135deg,var(--teal),var(--gold));
+}
+.footer p { font-size:.78rem; color:var(--ink-soft); }
+
+@keyframes fadeInUp {
+  from { opacity:0; transform:translateY(22px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+@media(max-width:640px){
+  .page { padding:64px 16px 60px; }
+  .flow-steps { grid-template-columns:1fr 1fr; }
+  .flow-step:nth-child(2){ border-right:none; }
+  .flow-step:nth-child(3){ border-right:none; border-top:1px solid rgba(26,23,20,.06); }
+  .flow-step:nth-child(4){ border-top:1px solid rgba(26,23,20,.06); }
+  .flow-arrow { display:none; }
+}
+</style>
+</head>
+<body>
+
+<!-- BG ORBS -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<div class="page">
+
+  <!-- ── HEADER ── -->
+  <header class="header">
+    <div class="hero-badge">
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      Método de Atuação
+    </div>
+    <h1> Mapeamento do <span class="highlight"> Conhecimento</span></h1>
+    <p class="header-lead">Passe o mouse sobre os nós para explorar cada conceito.</p>
+    <div class="divider"></div>
+  </header>
+
+  <!-- ── DIAGRAM CARD ── -->
+  <div class="diagram-card">
+    <p class="diagram-hint">↑ Anel externo: Visão de Mundo &nbsp;·&nbsp; Anel interno: Pilares do Método &nbsp;·&nbsp; Centro: Núcleo Axiomático</p>
+
+    <svg id="cosmos" viewBox="0 0 860 860" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <!-- Filters -->
+        <filter id="f-teal" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="7" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="f-soft" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur stdDeviation="3" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="f-shadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1A1714" flood-opacity="0.12"/>
+        </filter>
+        <filter id="f-center-glow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="16" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+
+        <!-- Gradients -->
+        <radialGradient id="grad-bg" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#F5F0E8" stop-opacity="1"/>
+        </radialGradient>
+        <linearGradient id="grad-teal-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%"   stop-color="#3A7D72"/>
+          <stop offset="100%" stop-color="#C9A84C"/>
+        </linearGradient>
+        <linearGradient id="grad-teal-gold-v" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%"   stop-color="#3A7D72"/>
+          <stop offset="100%" stop-color="#C9A84C"/>
+        </linearGradient>
+        <radialGradient id="grad-center" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#3A7D72" stop-opacity=".15"/>
+          <stop offset="100%" stop-color="#C9A84C" stop-opacity=".05"/>
+        </radialGradient>
+        <linearGradient id="grad-terra" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%"   stop-color="#D4724A"/>
+          <stop offset="100%" stop-color="#F0C4A8"/>
+        </linearGradient>
+        <linearGradient id="grad-plum" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%"   stop-color="#6B4F71"/>
+          <stop offset="100%" stop-color="#C4A8CC"/>
+        </linearGradient>
+
+        <!-- Dashed arrow marker -->
+        <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+          <path d="M0,0 L6,3 L0,6 Z" fill="rgba(58,125,114,0.35)"/>
+        </marker>
+      </defs>
+
+      <!-- ── BACKGROUND ── -->
+      <circle cx="430" cy="430" r="418" fill="url(#grad-bg)"/>
+      <circle cx="430" cy="430" r="418" fill="none" stroke="rgba(26,23,20,.06)" stroke-width="1"/>
+
+      <!-- ── GRID RINGS ── -->
+      <circle cx="430" cy="430" r="390" fill="none" stroke="rgba(26,23,20,.04)" stroke-width="0.8"/>
+      <circle cx="430" cy="430" r="315" fill="none" stroke="rgba(58,125,114,.08)" stroke-width="1" stroke-dasharray="4 6"/>
+      <circle cx="430" cy="430" r="185" fill="none" stroke="rgba(201,168,76,.12)" stroke-width="1" stroke-dasharray="3 5"/>
+      <circle cx="430" cy="430" r="72"  fill="none" stroke="rgba(58,125,114,.2)"  stroke-width="1.5"/>
+
+      <!-- ── TICK MARKS (outermost ring) ── -->
+      <g id="ticks" opacity="0.25"></g>
+
+      <!-- ── RADIAL SPOKES ── -->
+      <g id="spokes" opacity="0.05" stroke="#1A1714" stroke-width="0.6"></g>
+
+      <!-- ── CENTER GLOW AREA ── -->
+      <circle cx="430" cy="430" r="130" fill="url(#grad-center)" opacity="0.8"/>
+
+      <!-- ── CONNECTION LINES ── -->
+      <g id="connections"></g>
+
+      <!-- ── RING LABELS ── -->
+      <path id="arc-outer" d="" fill="none"/>
+      <text>
+        <textPath href="#arc-outer" startOffset="50%" text-anchor="middle"
+          font-family="DM Sans, sans-serif" font-size="9" fill="#D4724A"
+          opacity="0.5" letter-spacing="3" font-weight="600">
+          ● VISÃO DE MUNDO ● CONCEPÇÕES ● POSTURA ●
+        </textPath>
+      </text>
+
+      <path id="arc-inner" d="" fill="none"/>
+      <text>
+        <textPath href="#arc-inner" startOffset="50%" text-anchor="middle"
+          font-family="DM Sans, sans-serif" font-size="8" fill="#3A7D72"
+          opacity="0.6" letter-spacing="3" font-weight="600">
+          PILARES DO MÉTODO
+        </textPath>
+      </text>
+
+      <!-- ── NODE GROUPS (drawn by JS) ── -->
+      <g id="outer-nodes"></g>
+      <g id="inner-nodes"></g>
+      <g id="center-node"></g>
+    </svg>
+
+    <!-- LEGEND -->
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-dot" style="background:linear-gradient(135deg,#3A7D72,#C9A84C)"></div>
+        <span>Núcleo Axiomático — <em>Trajetória Social do Saber</em></span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#3A7D72"></div>
+        <span>Pilares do Método (anel interno)</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#D4724A"></div>
+        <span>Visão de Mundo (anel externo)</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:rgba(58,125,114,.3);border:1px solid rgba(58,125,114,.5)"></div>
+        <span>Conexões método ↔ mundo</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── METHOD FLOW ── -->
+  <div class="flow-wrap">
+    <div class="flow-header">
+      <span class="section-tag tag-teal">Fluxo de Aplicação</span>
+    </div>
+    <div class="flow-steps">
+      <div class="flow-step">
+        <div class="flow-n">01</div>
+        <div class="flow-title">Rastreio Contextual</div>
+        <div class="flow-q">Quem produziu esse saber?</div>
+        <div class="flow-desc">Observação de campo, análise de metadados e mapeamento da trajetória social do dado.</div>
+        <div class="flow-arrow"></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-n">02</div>
+        <div class="flow-title">Diagnóstico Integrado</div>
+        <div class="flow-q">Que normas moldaram isso?</div>
+        <div class="flow-desc">Análise legal e normativa, marcos regulatórios e princípios finalísticos de uso.</div>
+        <div class="flow-arrow"></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-n">03</div>
+        <div class="flow-title">Análise Crítica</div>
+        <div class="flow-q">Que vieses estão embutidos?</div>
+        <div class="flow-desc">Cruzamento de dados, narrativas e marcos legais. Identificação de vieses e distorções.</div>
+        <div class="flow-arrow"></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-n">04</div>
+        <div class="flow-title">Difusão Responsável</div>
+        <div class="flow-q">Como devolver e para quem?</div>
+        <div class="flow-desc">Produtos acessíveis e participativos, comprometidos com os sujeitos representados.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <div class="footer">
+    <div class="footer-inner">
+      <div class="footer-dot"></div>
+      <p><a href="https://mairalimas.github.io" style="color:var(--teal);font-weight:500">mairalimas.github.io</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- ── TOOLTIP ── -->
+<div class="tooltip" id="tooltip">
+  <div class="tooltip-title" id="tt-title"></div>
+  <div class="tooltip-body"  id="tt-body"></div>
+</div>
+
+<script>
+// ══════════════════════════════════════════════════════════
+// DESIGN TOKENS (matching site palette)
+// ══════════════════════════════════════════════════════════
+const T = {
+  ink:       '#1A1714',
+  inkSoft:   '#4A4440',
+  cream:     '#F5F0E8',
+  teal:      '#3A7D72',
+  tealLight: '#A8D5CE',
+  gold:      '#C9A84C',
+  goldLight: '#E8D48B',
+  terra:     '#D4724A',
+  terraLight:'#F0C4A8',
+  plum:      '#6B4F71',
+  plumLight: '#C4A8CC',
+  cardBg:    '#FFFDF8',
+};
+
+// ══════════════════════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════════════════════
+const CENTER = {
+  x:430, y:430, r:68,
+  lines: ['Trajetória', 'Social', 'do Saber'],
+  title: 'Núcleo Axiomático — Trajetória Social do Saber',
+  desc: 'O conhecimento possui vida e história social. Não é neutro. Essa trajetória — quem produziu, em que contexto, sob quais normas — precisa ser rastreada antes de qualquer análise.'
+};
+
+const INNER_R = 185;
+const OUTER_R = 315;
+
+const innerNodes = [
+  { angle:-90,      label:['Trajetória do','Conhecimento'],
+    title:'I · Trajetória social do conhecimento',
+    desc:'Todo dado tem endereço, data e remetente. Antes de analisar, rastreia-se como foi produzido, qual a "porta de entrada".',
+    color:T.teal, colorFill:'rgba(58,125,114,.08)', connects:[0,2] },
+  { angle:-90+72,   label:['Posicionamento','do Sujeito'],
+    title:'II · Localização e posicionamento',
+    desc:'"Eu sou eu e minhas circunstâncias." O lugar de fala determina o que é visível, o que é invisível, e como cada grupo aparece nos dados e nas narrativas oficiais.',
+    color:T.teal, colorFill:'rgba(58,125,114,.08)', connects:[3,2] },
+  { angle:-90+144,  label:['Tecnologia','Epistêmica'],
+    title:'III · Tecnologia como infraestrutura epistêmica',
+    desc:'Algoritmos, bancos de dados e sistemas codificam decisões políticas. Cada variável de raça num formulário e cada campo obrigatório carrega implicações epistemológicas.',
+    color:T.teal, colorFill:'rgba(58,125,114,.08)', connects:[1,4] },
+  { angle:-90+216,  label:['Normatividade','& Moldura'],
+    title:'IV · Normativas para inclusão',
+    desc:'"As decisões políticas se tornam política de dados." Leis e estatutos definem quem aparece nos dados, e quem desaparece estruturalmente.',
+    color:T.teal, colorFill:'rgba(58,125,114,.08)', connects:[5,0] },
+  { angle:-90+288,  label:['Difusão','Equitativa'],
+    title:'V · Difusão com equidade',
+    desc:'Conhecimento produzido sobre comunidades precisa retornar a elas em formatos acessíveis. A difusão é parte constitutiva do valor do conhecimento — não etapa final.',
+    color:T.teal, colorFill:'rgba(58,125,114,.08)', connects:[3,2] },
+];
+
+const outerNodes = [
+  { angle:-90,      label:['Estado &','Políticas Públicas'],
+    title:'Estado, Sociedade e Instituições',
+    desc:'A política institucional molda a política de dados. Não há neutralidade. Legislação, políticas sociais e estratégia de coleta de informações tem efeito nos registros de dados e no exercício de direitos de determinada população.',
+    color:T.terra, colorFill:'rgba(212,114,74,.08)' },
+  { angle:-90+60,   label:['Dados &','Sistemas'],
+    title:'Tecnologia, Dados e Infraestrutura',
+    desc:'Sistemas de informação não são recipientes passivos. A escolha da plataforma, do formato e do metadado já é uma decisão política sobre o que pode ser sabido e por quem.',
+    color:T.terra, colorFill:'rgba(212,114,74,.08)' },
+  { angle:-90+120,  label:['Conhecimento','& Evidência'],
+    title:'Conhecimento, Evidência e Decisão',
+    desc:'O ciclo de expansão de resultados, com IA e aprendizado de máquina, retroalimenta vieses quando a trajetória social dos dados não é considerada no processo científico.',
+    color:T.terra, colorFill:'rgba(212,114,74,.08)' },
+  { angle:-90+180,  label:['Poder &','Desigualdade'],
+    title:'Poder, Desigualdade e Responsabilidade',
+    desc:'A invisibilização de grupos nos dados não é acidente. Grupos marginalizados têm trajetórias de coleta marcadas pela estratégia de cidadania adotada pelo Estado.',
+    color:T.terra, colorFill:'rgba(212,114,74,.08)' },
+  { angle:-90+240,  label:['Risco &','Complexidade'],
+    title:'Risco, Incerteza e Complexidade',
+    desc:'Cauda longa dos dados, retroalimentação algorítmica, os vieses embutidos em modelos preditivos e as distorções introduzidas pela legislação são riscos epistêmicos que precisam ser nomeados.',
+    color:T.terra, colorFill:'rgba(212,114,74,.08)' },
+  { angle:-90+300,  label:['Normas,','Leis & Direitos'],
+    title:'Normas, Princípios e Exceções',
+    desc:'Mediação através de princípio de dados de inclusão como os Princípios CARE, OCAP, DEIA e AURORA, e pela Ética e Códigos de Conduta.',
+    color:T.terra, colorFill:'rgba(212,114,74,.08)' },
+];
+
+// ══════════════════════════════════════════════════════════
+// DRAWING HELPERS
+// ══════════════════════════════════════════════════════════
+const svg = document.getElementById('cosmos');
+const NS = 'http://www.w3.org/2000/svg';
+const CX = 430, CY = 430;
+
+function rad(d){ return d * Math.PI / 180; }
+function pt(cx,cy,r,a){ return {x:cx+r*Math.cos(rad(a)), y:cy+r*Math.sin(rad(a))}; }
+
+function el(tag,attrs,parent){
+  const e = document.createElementNS(NS,tag);
+  Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));
+  if(parent) parent.appendChild(e);
+  return e;
+}
+
+// ── Ticks
+const ticksG = document.getElementById('ticks');
+for(let i=0;i<72;i++){
+  const a=i*5;
+  const p1=pt(CX,CY,382,a), p2=pt(CX,CY,i%6===0?370:376,a);
+  el('line',{x1:p1.x,y1:p1.y,x2:p2.x,y2:p2.y,
+    stroke:T.terra,'stroke-width':i%6===0?1.5:0.8},ticksG);
+}
+
+// ── Spokes
+const spokesG = document.getElementById('spokes');
+for(let i=0;i<12;i++){
+  const p1=pt(CX,CY,70,i*30), p2=pt(CX,CY,390,i*30);
+  el('line',{x1:p1.x,y1:p1.y,x2:p2.x,y2:p2.y},spokesG);
+}
+
+// ── Arc labels
+function arcPath(cx,cy,r,a1,a2){
+  const s=pt(cx,cy,r,a1), e=pt(cx,cy,r,a2);
+  const large=(a2-a1)>180?1:0;
+  return `M ${s.x} ${s.y} A ${r} ${r} 0 ${large} 1 ${e.x} ${e.y}`;
+}
+document.getElementById('arc-outer').setAttribute('d', arcPath(CX,CY,370,-200,20));
+document.getElementById('arc-inner').setAttribute('d', arcPath(CX,CY,210,-210,30));
+
+// ── Compute node positions
+innerNodes.forEach(n=>{ const p=pt(CX,CY,INNER_R,n.angle); n.x=p.x; n.y=p.y; });
+outerNodes.forEach(n=>{ const p=pt(CX,CY,OUTER_R,n.angle); n.x=p.x; n.y=p.y; });
+
+// ── Connections
+const connG = document.getElementById('connections');
+
+// Inner → outer
+innerNodes.forEach((n,i)=>{
+  (n.connects||[]).forEach(oi=>{
+    const o=outerNodes[oi];
+    el('line',{
+      x1:n.x,y1:n.y,x2:o.x,y2:o.y,
+      stroke:'rgba(58,125,114,0.14)',
+      'stroke-width':'1.2',
+      'stroke-dasharray':'4 6',
+      'data-inner':i, 'data-outer':oi,
+      class:'conn-line'
+    },connG);
+  });
+});
+
+// Inner → center
+innerNodes.forEach((n,i)=>{
+  el('line',{
+    x1:CX,y1:CY,x2:n.x,y2:n.y,
+    stroke:'rgba(201,168,76,0.2)',
+    'stroke-width':'1',
+    'data-center-inner':i,
+    class:'conn-center'
+  },connG);
+});
+
+// ══════════════════════════════════════════════════════════
+// NODE FACTORY
+// ══════════════════════════════════════════════════════════
+function drawNode(container, n, nodeR, isOuter, idx){
+  const g = el('g',{
+    transform:`translate(${n.x},${n.y})`,
+    class: isOuter?'outer-node':'inner-node',
+    'data-idx':idx, style:'cursor:pointer'
+  },container);
+
+  // Shadow ring (hover)
+  el('circle',{r:nodeR+10,fill:'none',
+    stroke:n.color,'stroke-width':'1.5',
+    opacity:'0',class:'node-halo'},g);
+
+  // Fill
+  el('circle',{r:nodeR,
+    fill:n.colorFill,
+    stroke:n.color,'stroke-width':isOuter?'1.5':'2',
+    filter:'url(#f-shadow)',
+    class:'node-circle'},g);
+
+  // Center dot
+  el('circle',{r:isOuter?3.5:4.5,fill:n.color},g);
+
+  // Label — pushed outward from center
+  const lines = n.label;
+  const lineH = isOuter?11.5:12.5;
+  const offset = nodeR+(isOuter?16:18);
+  const dx=n.x-CX, dy=n.y-CY;
+  const len=Math.sqrt(dx*dx+dy*dy);
+  const nx_=dx/len, ny_=dy/len;
+  const lx=nx_*offset, ly=ny_*offset;
+  const anchor = Math.abs(nx_)<0.15?'middle':(nx_>0?'start':'end');
+
+  lines.forEach((line,li)=>{
+    const yOff = ly + (li-(lines.length-1)/2)*lineH;
+    el('text',{
+      x:lx, y:yOff,
+      'text-anchor':anchor, 'dominant-baseline':'middle',
+      fill:n.color,
+      'font-family':'DM Sans, sans-serif',
+      'font-size':isOuter?'10.5':'11',
+      'font-weight':'600',
+      'letter-spacing':'0.01em',
+      class:'node-text'
+    },g).textContent = line;
+  });
+
+  g.addEventListener('mouseenter', e=>showTT(e,n));
+  g.addEventListener('mousemove',  e=>moveTT(e));
+  g.addEventListener('mouseleave', ()=>{ hideTT(); resetHighlight(); });
+  g.addEventListener('mouseenter', ()=>doHighlight(isOuter, idx));
+  return g;
+}
+
+// Draw
+const outerG = document.getElementById('outer-nodes');
+outerNodes.forEach((n,i)=>drawNode(outerG,n,22,true,i));
+
+const innerG = document.getElementById('inner-nodes');
+innerNodes.forEach((n,i)=>drawNode(innerG,n,28,false,i));
+
+// ── CENTER NODE
+const centerG = document.getElementById('center-node');
+const cg = el('g',{transform:`translate(${CX},${CY})`,style:'cursor:pointer'},centerG);
+
+el('circle',{r:'90',fill:'rgba(58,125,114,.05)',filter:'url(#f-center-glow)'},cg);
+el('circle',{r:'70',fill:'rgba(255,253,248,0.95)',
+  stroke:'url(#grad-teal-gold)','stroke-width':'2.5',
+  filter:'url(#f-shadow)'},cg);
+el('circle',{r:'58',fill:'none',stroke:'rgba(58,125,114,.15)','stroke-width':'1'},cg);
+el('circle',{r:'7', fill:'url(#grad-teal-gold)',filter:'url(#f-teal)'},cg);
+
+// Center text lines
+[['Trajetória','-18',false],['Social','0',true],['do Saber','16',false]].forEach(([txt,y,bold])=>{
+  el('text',{
+    x:0,y,
+    'text-anchor':'middle','dominant-baseline':'middle',
+    fill:T.teal,
+    'font-family':'Playfair Display, serif',
+    'font-size':bold?'12.5':'11',
+    'font-weight':bold?'700':'400',
+    'font-style':bold?'normal':'italic',
+    'letter-spacing':'0.01em'
+  },cg).textContent = txt;
+});
+
+cg.addEventListener('mouseenter', e=>showTT(e,CENTER));
+cg.addEventListener('mousemove',  e=>moveTT(e));
+cg.addEventListener('mouseleave', hideTT);
+
+// ══════════════════════════════════════════════════════════
+// HIGHLIGHT
+// ══════════════════════════════════════════════════════════
+function doHighlight(isOuter, idx){
+  const dimOpacity='0.15';
+
+  document.querySelectorAll('.outer-node .node-circle').forEach(c=>c.setAttribute('opacity',dimOpacity));
+  document.querySelectorAll('.inner-node .node-circle').forEach(c=>c.setAttribute('opacity',dimOpacity));
+  document.querySelectorAll('.outer-node .node-text').forEach(t=>t.setAttribute('opacity','0.2'));
+  document.querySelectorAll('.inner-node .node-text').forEach(t=>t.setAttribute('opacity','0.2'));
+  document.querySelectorAll('.conn-line').forEach(l=>{ l.setAttribute('opacity','0.04'); });
+  document.querySelectorAll('.conn-center').forEach(l=>l.setAttribute('opacity','0.05'));
+
+  if(!isOuter){
+    const n=innerNodes[idx];
+    // Highlight self
+    const selfNode=document.querySelector(`.inner-node[data-idx="${idx}"]`);
+    if(selfNode){
+      selfNode.querySelector('.node-circle').setAttribute('opacity','1');
+      selfNode.querySelectorAll('.node-text').forEach(t=>t.setAttribute('opacity','1'));
+      const h=selfNode.querySelector('.node-halo');
+      if(h) h.setAttribute('opacity','0.5');
+    }
+    // Center connection
+    document.querySelector(`.conn-center[data-center-inner="${idx}"]`)?.setAttribute('opacity','1');
+    // Connected outer nodes
+    (n.connects||[]).forEach(oi=>{
+      document.querySelectorAll(`.conn-line[data-inner="${idx}"][data-outer="${oi}"]`).forEach(l=>{
+        l.setAttribute('opacity','1');
+        l.setAttribute('stroke','rgba(58,125,114,0.6)');
+        l.setAttribute('stroke-dasharray','none');
+      });
+      const on=document.querySelector(`.outer-node[data-idx="${oi}"]`);
+      if(on){
+        on.querySelector('.node-circle').setAttribute('opacity','1');
+        on.querySelectorAll('.node-text').forEach(t=>t.setAttribute('opacity','1'));
+      }
+    });
+  } else {
+    // Highlight self
+    const selfNode=document.querySelector(`.outer-node[data-idx="${idx}"]`);
+    if(selfNode){
+      selfNode.querySelector('.node-circle').setAttribute('opacity','1');
+      selfNode.querySelectorAll('.node-text').forEach(t=>t.setAttribute('opacity','1'));
+      const h=selfNode.querySelector('.node-halo');
+      if(h) h.setAttribute('opacity','0.5');
+    }
+    // Find inner nodes that connect to this outer
+    innerNodes.forEach((n,ii)=>{
+      if((n.connects||[]).includes(idx)){
+        document.querySelectorAll(`.conn-line[data-inner="${ii}"][data-outer="${idx}"]`).forEach(l=>{
+          l.setAttribute('opacity','1');
+          l.setAttribute('stroke','rgba(58,125,114,0.6)');
+          l.setAttribute('stroke-dasharray','none');
+        });
+        document.querySelector(`.conn-center[data-center-inner="${ii}"]`)?.setAttribute('opacity','0.5');
+        const inNode=document.querySelector(`.inner-node[data-idx="${ii}"]`);
+        if(inNode){
+          inNode.querySelector('.node-circle').setAttribute('opacity','1');
+          inNode.querySelectorAll('.node-text').forEach(t=>t.setAttribute('opacity','1'));
+        }
+      }
+    });
+  }
+}
+
+function resetHighlight(){
+  document.querySelectorAll('.node-circle').forEach(c=>c.removeAttribute('opacity'));
+  document.querySelectorAll('.node-text').forEach(t=>t.removeAttribute('opacity'));
+  document.querySelectorAll('.node-halo').forEach(h=>h.setAttribute('opacity','0'));
+  document.querySelectorAll('.conn-line').forEach(l=>{
+    l.removeAttribute('opacity');
+    l.setAttribute('stroke','rgba(58,125,114,0.14)');
+    l.setAttribute('stroke-dasharray','4 6');
+  });
+  document.querySelectorAll('.conn-center').forEach(l=>l.removeAttribute('opacity'));
+}
+
+// ══════════════════════════════════════════════════════════
+// TOOLTIP
+// ══════════════════════════════════════════════════════════
+const tooltip=document.getElementById('tooltip');
+const ttTitle=document.getElementById('tt-title');
+const ttBody =document.getElementById('tt-body');
+
+function showTT(e,n){ ttTitle.textContent=n.title; ttBody.textContent=n.desc; tooltip.classList.add('show'); moveTT(e); }
+function moveTT(e){
+  const x=e.clientX, y=e.clientY, tw=280, th=130;
+  tooltip.style.left=(x+16+tw>window.innerWidth?x-tw-10:x+16)+'px';
+  tooltip.style.top =(y+16+th>window.innerHeight?y-th-10:y+16)+'px';
+}
+function hideTT(){ tooltip.classList.remove('show'); }
+
+// ══════════════════════════════════════════════════════════
+// ENTRANCE ANIMATION — draw lines progressively
+// ══════════════════════════════════════════════════════════
+document.querySelectorAll('.conn-line,.conn-center').forEach((l,i)=>{
+  const len=1000;
+  l.style.strokeDasharray=len;
+  l.style.strokeDashoffset=len;
+  l.style.transition=`stroke-dashoffset 1.2s ${0.4+i*0.05}s ease`;
+  setTimeout(()=>l.style.strokeDashoffset='0',60);
+});
+
+// Reset strokeDasharray on conn-line after animation so hover can override it
+document.querySelectorAll('.conn-line').forEach(l=>{
+  l.addEventListener('transitionend',function(){
+    // keep as the actual dashed value; hover changes inline
+  });
+});
+</script>
+</body>
+</html>
